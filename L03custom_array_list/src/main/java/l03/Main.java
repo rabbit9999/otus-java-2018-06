@@ -60,12 +60,5 @@ public class Main {
         //Index of 10
         System.out.println("Index of 10: " + list.indexOf(10));
 
-//        System.out.println(list_1.size());
-//        System.out.println(list_1.get(0));
-//        System.out.println(list_1.get(1));
-//        System.out.println(list_1.get(2));
-//        System.out.println(list_1.get(3));
-//        System.out.println(list_1.get(4));
-
     }
 }

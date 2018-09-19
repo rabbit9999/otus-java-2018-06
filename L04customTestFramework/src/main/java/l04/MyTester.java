@@ -53,7 +53,7 @@ public class MyTester {
             }
         }
         catch (Throwable e){
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 }

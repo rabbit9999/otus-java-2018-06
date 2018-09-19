@@ -93,7 +93,7 @@ class ReflectionHelper {
             return cl.getDeclaredMethods();
             
         } catch (Throwable e) {
-            System.err.println(e);
+            e.printStackTrace();
             return new Method[0];
         }
     }
@@ -103,7 +103,7 @@ class ReflectionHelper {
             return m.getAnnotations();
         }
         catch (Throwable e){
-            System.err.println(e);
+            e.printStackTrace();
             return new Annotation[0];
         }
     }

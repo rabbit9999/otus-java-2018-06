@@ -8,11 +8,12 @@ public class Stand{
 
     List<Integer> lst = new ArrayList<Integer>();
     Thread tInc;
-    Thread tDec;
+//    Thread tDec;
 
     public void start(){
         Runnable incrementor = new Runnable(){
             public void run(){
+                int counter = 0;
                 while(true){
                     Random generator = new Random();
                     try{
@@ -23,29 +24,35 @@ public class Stand{
                         System.out.println(">>> NUMBER OF ADDED ELEMENTS: "+lst.size());
                         stop();
                     }
+
+                    if(counter > 10000){
+                        lst.remove(0);
+                        counter = 0;
+                    }
+                    counter++;
                 }
             }
         };
 
-        Runnable decrementor = new Runnable(){
-            public void run(){
-                while(true){
-                    if(lst.size() > 0){
-                        lst.remove(0);
-                    }
-                    int a = 1;
-                    for(int i = 0; i < 2000000; i++){
-                        a = a * i;
-                    }
-                }
-            }
-        };
+//        Runnable decrementor = new Runnable(){
+//            public void run(){
+//                while(true){
+//                    if(lst.size() > 0){
+//                        lst.remove(0);
+//                    }
+//                    int a = 1;
+//                    for(int i = 0; i < 2000000; i++){
+//                        a = a * i;
+//                    }
+//                }
+//            }
+//        };
 
         tInc = new Thread(incrementor);
-        tDec = new Thread(decrementor);
+//        tDec = new Thread(decrementor);
 
         tInc.start();
-        tDec.start();
+//        tDec.start();
 
     }
 

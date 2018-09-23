@@ -1,0 +1,218 @@
+-XX:+UseG1GC
+
+1,736 seconds on G1 Young Generation (28 collections)
+
+ 0,000 seconds on G1 Old Generation (0 collections)
+
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=14000,server=y,suspend=n -Xms512m -Xmx512m -XX:MaxMetaspaceSize=256m -verbose:gc -Dcom.sun.management.jmxremote.port=15000 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./dumps/ -XX:+UseG1GC -javaagent:/home/rabbit/BIN/idea/lib/idea_rt.jar=39633:/home/rabbit/BIN/idea/bin -Dfile.encoding=UTF-8 -classpath /home/rabbit/PROJECTS/otus-java-2018-06/L051gc/target/classes l05.Main
+[0.059s][info][gc] Using G1
+Listening for transport dt_socket at address: 14000
+com.sun.management.internal.GarbageCollectorExtImpl@33723e30
+com.sun.management.internal.GarbageCollectorExtImpl@64f6106c
+[1,037s][info][gc] GC(0) Pause Young (G1 Evacuation Pause) 27M->7M(512M) 35,931ms
+
+Young Gen GC: - 1 G1 Young Generation (from G1 Evacuation Pause) 36 milliseconds; start-end times 895-931
+[1,231s][info][gc] GC(1) Pause Young (G1 Evacuation Pause) 33M->16M(512M) 62,927ms
+CodeHeap 'profiled nmethods'(still expandable)used: 11.0%->11.0%(1MB) / G1 Old Gen(still expandable)used: 92.5%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 0.0%->0.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 0.2%->0.6%(4MB) / Compressed Class Space(still expandable)used: 94.6%->94.6%(13MB) / Metaspace(still expandable)used: 51.7%->51.7%(2MB) / G1 Eden Space(still expandable)used: 85.4%->85.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 3.8%
+
+Young Gen GC: - 2 G1 Young Generation (from G1 Evacuation Pause) 62 milliseconds; start-end times 1063-1125
+CodeHeap 'profiled nmethods'(still expandable)used: 11.9%->11.9%(1MB) / G1 Old Gen(still expandable)used: 91.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 1.5%->2.6%(13MB) / Compressed Class Space(still expandable)used: 94.9%->94.9%(13MB) / Metaspace(still expandable)used: 55.5%->55.5%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.1%->46.1%(2MB) /
+GC cumulated overhead 8.7%
+[1,326s][info][gc] GC(2) Pause Young (G1 Evacuation Pause) 41M->25M(512M) 53,872ms
+
+Young Gen GC: - 3 G1 Young Generation (from G1 Evacuation Pause) 54 milliseconds; start-end times 1166-1220
+CodeHeap 'profiled nmethods'(still expandable)used: 12.2%->12.2%(1MB) / G1 Old Gen(still expandable)used: 91.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 3.2%->4.4%(22MB) / Compressed Class Space(still expandable)used: 94.9%->94.9%(13MB) / Metaspace(still expandable)used: 55.7%->55.7%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 12.4%
+[1,457s][info][gc] GC(3) Pause Young (G1 Evacuation Pause) 51M->35M(512M) 46,768ms
+
+Young Gen GC: - 4 G1 Young Generation (from G1 Evacuation Pause) 47 milliseconds; start-end times 1304-1351
+CodeHeap 'profiled nmethods'(still expandable)used: 12.4%->12.4%(1MB) / G1 Old Gen(still expandable)used: 91.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 5.3%->6.5%(32MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(13MB) / Metaspace(still expandable)used: 55.9%->55.9%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 14.7%
+[1,610s][info][gc] GC(4) Pause Young (G1 Evacuation Pause) 64M->48M(512M) 57,022ms
+
+Young Gen GC: - 5 G1 Young Generation (from G1 Evacuation Pause) 57 milliseconds; start-end times 1447-1504
+CodeHeap 'profiled nmethods'(still expandable)used: 14.4%->14.4%(1MB) / G1 Old Gen(still expandable)used: 91.6%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 7.8%->9.0%(45MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(13MB) / Metaspace(still expandable)used: 56.2%->56.2%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 17.0%
+[1,851s][info][gc] GC(5) Pause Young (G1 Evacuation Pause) 87M->65M(512M) 81,850ms
+
+Young Gen GC: - 6 G1 Young Generation (from G1 Evacuation Pause) 81 milliseconds; start-end times 1664-1745
+CodeHeap 'profiled nmethods'(still expandable)used: 14.5%->14.5%(1MB) / G1 Old Gen(still expandable)used: 93.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 11.2%->12.8%(62MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(13MB) / Metaspace(still expandable)used: 56.7%->56.7%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 19.3%
+[2,207s][info][gc] GC(6) Pause Young (G1 Evacuation Pause) 96M->72M(512M) 61,552ms
+
+Young Gen GC: - 7 G1 Young Generation (from G1 Evacuation Pause) 61 milliseconds; start-end times 2040-2101
+CodeHeap 'profiled nmethods'(still expandable)used: 14.6%->14.6%(1MB) / G1 Old Gen(still expandable)used: 93.9%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->125.0%(6MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 12.9%->14.2%(68MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(13MB) / Metaspace(still expandable)used: 57.3%->57.3%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 18.9%
+[2,913s][info][gc] GC(7) Pause Young (G1 Evacuation Pause) 125M->97M(512M) 71,148ms
+
+Young Gen GC: - 8 G1 Young Generation (from G1 Evacuation Pause) 71 milliseconds; start-end times 2736-2807
+CodeHeap 'profiled nmethods'(still expandable)used: 14.6%->14.6%(1MB) / G1 Old Gen(still expandable)used: 92.5%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->120.0%(7MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 17.7%->19.6%(92MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(13MB) / Metaspace(still expandable)used: 57.5%->57.5%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 16.7%
+[3,596s][info][gc] GC(8) Pause Young (G1 Evacuation Pause) 141M->108M(512M) 44,536ms
+
+Young Gen GC: - 9 G1 Young Generation (from G1 Evacuation Pause) 44 milliseconds; start-end times 3446-3490
+CodeHeap 'profiled nmethods'(still expandable)used: 14.8%->14.8%(1MB) / G1 Old Gen(still expandable)used: 93.6%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->116.6%(8MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 20.0%->22.0%(102MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(13MB) / Metaspace(still expandable)used: 57.8%->57.8%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 14.6%
+[4,754s][info][gc] GC(9) Pause Young (G1 Evacuation Pause) 180M->143M(512M) 85,875ms
+
+Young Gen GC: - 10 G1 Young Generation (from G1 Evacuation Pause) 86 milliseconds; start-end times 4562-4648
+CodeHeap 'profiled nmethods'(still expandable)used: 14.9%->14.9%(1MB) / G1 Old Gen(still expandable)used: 82.7%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(8MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 27.8%->30.5%(137MB) / Compressed Class Space(still expandable)used: 95.1%->95.1%(13MB) / Metaspace(still expandable)used: 58.3%->58.3%(2MB) / G1 Eden Space(still expandable)used: 88.1%->88.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.9%->45.9%(2MB) /
+GC cumulated overhead 12.8%
+[5,163s][info][gc] GC(10) Pause Young (G1 Evacuation Pause) 202M->156M(512M) 61,879ms
+
+Young Gen GC: - 11 G1 Young Generation (from G1 Evacuation Pause) 62 milliseconds; start-end times 4995-5057
+CodeHeap 'profiled nmethods'(still expandable)used: 15.9%->15.9%(1MB) / G1 Old Gen(still expandable)used: 93.6%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->128.5%(10MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 30.8%->33.4%(148MB) / Compressed Class Space(still expandable)used: 95.6%->95.6%(13MB) / Metaspace(still expandable)used: 63.5%->63.5%(2MB) / G1 Eden Space(still expandable)used: 84.2%->84.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.0%->46.0%(2MB) /
+GC cumulated overhead 13.0%
+[7,314s][info][gc] GC(11) Pause Young (G1 Evacuation Pause) 227M->173M(512M) 77,191ms
+
+Young Gen GC: - 12 G1 Young Generation (from G1 Evacuation Pause) 77 milliseconds; start-end times 7131-7208
+CodeHeap 'profiled nmethods'(still expandable)used: 22.3%->22.3%(1MB) / G1 Old Gen(still expandable)used: 94.6%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->111.1%(11MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 34.5%->38.0%(164MB) / Compressed Class Space(still expandable)used: 94.8%->94.8%(14MB) / Metaspace(still expandable)used: 89.8%->89.8%(3MB) / G1 Eden Space(still expandable)used: 84.8%->84.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 10.2%
+[10,163s][info][gc] GC(12) Pause Young (G1 Evacuation Pause) 285M->226M(512M) 74,914ms
+
+Young Gen GC: - 13 G1 Young Generation (from G1 Evacuation Pause) 75 milliseconds; start-end times 9982-10057
+CodeHeap 'profiled nmethods'(still expandable)used: 22.3%->22.3%(1MB) / G1 Old Gen(still expandable)used: 86.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->110.0%(12MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 47.8%->52.0%(216MB) / Compressed Class Space(still expandable)used: 94.9%->94.9%(14MB) / Metaspace(still expandable)used: 90.3%->90.3%(3MB) / G1 Eden Space(still expandable)used: 84.8%->84.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 8.0%
+[13,826s][info][gc] GC(13) Pause Young (G1 Evacuation Pause) 315M->246M(512M) 67,351ms
+
+Young Gen GC: - 14 G1 Young Generation (from G1 Evacuation Pause) 67 milliseconds; start-end times 13653-13720
+CodeHeap 'profiled nmethods'(still expandable)used: 23.1%->23.1%(1MB) / G1 Old Gen(still expandable)used: 90.8%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->118.1%(14MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 53.4%->57.9%(234MB) / Compressed Class Space(still expandable)used: 93.6%->93.6%(14MB) / Metaspace(still expandable)used: 94.4%->94.4%(3MB) / G1 Eden Space(still expandable)used: 85.0%->85.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 6.4%
+[16,843s][info][gc] GC(14) Pause Initial Mark (G1 Humongous Allocation) 309M->262M(512M) 62,197ms
+[16,843s][info][gc] GC(15) Concurrent Cycle
+
+Young Gen GC: - 15 G1 Young Generation (from G1 Humongous Allocation) 63 milliseconds; start-end times 16674-16737
+CodeHeap 'profiled nmethods'(still expandable)used: 23.6%->23.6%(1MB) / G1 Old Gen(still expandable)used: 53.9%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->115.3%(16MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 60.8%->64.3%(248MB) / Compressed Class Space(still expandable)used: 93.8%->93.8%(14MB) / Metaspace(still expandable)used: 97.3%->97.3%(3MB) / G1 Eden Space(still expandable)used: 85.0%->85.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 5.6%
+[17,408s][info][gc] GC(15) Pause Remark 317M->317M(512M) 2,503ms
+[17,630s][info][gc] GC(15) Pause Cleanup 321M->247M(512M) 0,391ms
+[17,645s][info][gc] GC(15) Concurrent Cycle 802,031ms
+[22,676s][info][gc] GC(16) Pause Young (G1 Evacuation Pause) 339M->262M(512M) 99,948ms
+
+Young Gen GC: - 16 G1 Young Generation (from G1 Evacuation Pause) 100 milliseconds; start-end times 22470-22570
+CodeHeap 'profiled nmethods'(still expandable)used: 23.8%->23.8%(1MB) / G1 Old Gen(still expandable)used: 94.2%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(16MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 57.2%->62.9%(248MB) / Compressed Class Space(still expandable)used: 93.8%->93.8%(14MB) / Metaspace(still expandable)used: 97.6%->97.6%(3MB) / G1 Eden Space(still expandable)used: 84.9%->84.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 4.6%
+[30,161s][info][gc] GC(17) Pause Initial Mark (G1 Evacuation Pause) 380M->289M(512M) 90,591ms
+[30,161s][info][gc] GC(18) Concurrent Cycle
+
+Young Gen GC: - 17 G1 Young Generation (from G1 Evacuation Pause) 90 milliseconds; start-end times 29965-30055
+CodeHeap 'profiled nmethods'(still expandable)used: 23.8%->23.8%(1MB) / G1 Old Gen(still expandable)used: 94.4%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->113.3%(18MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 66.5%->73.2%(273MB) / Compressed Class Space(still expandable)used: 94.0%->94.0%(14MB) / Metaspace(still expandable)used: 99.8%->99.8%(3MB) / G1 Eden Space(still expandable)used: 84.9%->84.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 3.7%
+[31,100s][info][gc] GC(18) Pause Remark 292M->292M(512M) 3,000ms
+[31,453s][info][gc] GC(18) Pause Cleanup 295M->259M(512M) 0,343ms
+[31,461s][info][gc] GC(18) Concurrent Cycle 1300,158ms
+[38,214s][info][gc] GC(19) Pause Young (G1 Evacuation Pause) 353M->276M(512M) 84,035ms
+
+Young Gen GC: - 18 G1 Young Generation (from G1 Evacuation Pause) 84 milliseconds; start-end times 38024-38108
+CodeHeap 'profiled nmethods'(still expandable)used: 27.3%->27.3%(1MB) / G1 Old Gen(still expandable)used: 94.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->88.2%(16MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 60.5%->67.0%(262MB) / Compressed Class Space(still expandable)used: 94.4%->94.4%(15MB) / Metaspace(still expandable)used: 97.9%->97.9%(3MB) / G1 Eden Space(still expandable)used: 85.1%->85.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 3.1%
+[38,507s][info][gc] GC(20) Pause Initial Mark (G1 Humongous Allocation) 279M->280M(512M) 46,961ms
+[38,507s][info][gc] GC(21) Concurrent Cycle
+
+Young Gen GC: - 19 G1 Young Generation (from G1 Humongous Allocation) 47 milliseconds; start-end times 38354-38401
+CodeHeap 'profiled nmethods'(still expandable)used: 27.6%->27.6%(1MB) / G1 Old Gen(still expandable)used: 2.6%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->20.0%(4MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 67.9%->72.1%(278MB) / Compressed Class Space(still expandable)used: 94.6%->94.6%(15MB) / Metaspace(still expandable)used: 98.3%->98.3%(3MB) / G1 Eden Space(still expandable)used: 85.1%->85.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 3.2%
+[39,395s][info][gc] GC(21) Pause Remark 362M->362M(512M) 2,427ms
+[39,770s][info][gc] GC(21) Pause Cleanup 366M->366M(512M) 0,401ms
+[39,772s][info][gc] GC(21) Concurrent Cycle 1264,240ms
+[45,283s][info][gc] GC(22) Pause Young (G1 Evacuation Pause) 436M->375M(512M) 47,356ms
+
+Young Gen GC: - 20 G1 Young Generation (from G1 Evacuation Pause) 47 milliseconds; start-end times 45130-45177
+CodeHeap 'profiled nmethods'(still expandable)used: 27.6%->27.6%(1MB) / G1 Old Gen(still expandable)used: 95.0%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->333.3%(11MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 82.9%->85.1%(366MB) / Compressed Class Space(still expandable)used: 94.6%->94.6%(15MB) / Metaspace(still expandable)used: 99.4%->99.4%(3MB) / G1 Eden Space(still expandable)used: 85.2%->85.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.9%
+[48,572s][info][gc] GC(23) Pause Initial Mark (G1 Evacuation Pause) 415M->384M(512M) 65,560ms
+[48,572s][info][gc] GC(24) Concurrent Cycle
+
+Young Gen GC: - 21 G1 Young Generation (from G1 Evacuation Pause) 66 milliseconds; start-end times 48400-48466
+CodeHeap 'profiled nmethods'(still expandable)used: 28.5%->28.5%(1MB) / G1 Old Gen(still expandable)used: 93.0%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->70.0%(8MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 79.6%->82.3%(378MB) / Compressed Class Space(still expandable)used: 94.7%->94.7%(15MB) / Metaspace(still expandable)used: 99.8%->99.8%(3MB) / G1 Eden Space(still expandable)used: 85.3%->85.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.8%
+[49,389s][info][gc] GC(24) Pause Remark 386M->386M(512M) 2,409ms
+[49,869s][info][gc] GC(24) Pause Cleanup 391M->338M(512M) 0,413ms
+[49,870s][info][gc] GC(24) Concurrent Cycle 1298,660ms
+[52,612s][info][gc] GC(25) Pause Young (G1 Evacuation Pause) 369M->341M(512M) 44,256ms
+
+Young Gen GC: - 22 G1 Young Generation (from G1 Evacuation Pause) 45 milliseconds; start-end times 52461-52506
+CodeHeap 'profiled nmethods'(still expandable)used: 28.8%->28.8%(1MB) / G1 Old Gen(still expandable)used: 92.6%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->85.7%(7MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 69.8%->72.3%(336MB) / Compressed Class Space(still expandable)used: 94.8%->94.8%(15MB) / Metaspace(still expandable)used: 98.3%->98.3%(3MB) / G1 Eden Space(still expandable)used: 85.4%->85.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.7%
+[57,494s][info][gc] GC(26) Pause Initial Mark (G1 Evacuation Pause) 395M->353M(512M) 49,435ms
+[57,494s][info][gc] GC(27) Concurrent Cycle
+
+Young Gen GC: - 23 G1 Young Generation (from G1 Evacuation Pause) 50 milliseconds; start-end times 57338-57388
+CodeHeap 'profiled nmethods'(still expandable)used: 29.6%->29.6%(1MB) / G1 Old Gen(still expandable)used: 94.7%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->133.3%(9MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 74.7%->77.0%(346MB) / Compressed Class Space(still expandable)used: 95.0%->95.0%(15MB) / Metaspace(still expandable)used: 98.1%->98.1%(3MB) / G1 Eden Space(still expandable)used: 85.5%->85.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.5%
+[58,370s][info][gc] GC(27) Pause Remark 356M->356M(512M) 2,535ms
+[58,791s][info][gc] GC(27) Pause Cleanup 360M->360M(512M) 0,376ms
+[58,792s][info][gc] GC(27) Concurrent Cycle 1298,174ms
+[63,235s][info][gc] GC(28) Pause Young (G1 Evacuation Pause) 405M->366M(512M) 55,645ms
+
+Young Gen GC: - 24 G1 Young Generation (from G1 Evacuation Pause) 56 milliseconds; start-end times 63073-63129
+CodeHeap 'profiled nmethods'(still expandable)used: 29.6%->29.6%(1MB) / G1 Old Gen(still expandable)used: 94.5%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(9MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 76.8%->79.8%(359MB) / Compressed Class Space(still expandable)used: 93.9%->93.9%(15MB) / Metaspace(still expandable)used: 98.5%->98.5%(3MB) / G1 Eden Space(still expandable)used: 85.9%->85.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.4%
+[68,120s][info][gc] GC(29) Pause Initial Mark (G1 Evacuation Pause) 416M->378M(512M) 53,868ms
+[68,120s][info][gc] GC(30) Concurrent Cycle
+
+Young Gen GC: - 25 G1 Young Generation (from G1 Evacuation Pause) 54 milliseconds; start-end times 67960-68014
+CodeHeap 'profiled nmethods'(still expandable)used: 29.8%->29.8%(1MB) / G1 Old Gen(still expandable)used: 94.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(9MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 79.4%->82.1%(371MB) / Compressed Class Space(still expandable)used: 94.2%->94.2%(15MB) / Metaspace(still expandable)used: 99.7%->99.7%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.3%
+[69,150s][info][gc] GC(30) Pause Remark 380M->380M(512M) 2,509ms
+[69,512s][info][gc] GC(30) Pause Cleanup 383M->383M(512M) 0,445ms
+[69,524s][info][gc] GC(30) Concurrent Cycle 1403,208ms
+[73,784s][info][gc] GC(31) Pause Young (G1 Evacuation Pause) 424M->389M(512M) 55,619ms
+
+Young Gen GC: - 26 G1 Young Generation (from G1 Evacuation Pause) 56 milliseconds; start-end times 73622-73678
+CodeHeap 'profiled nmethods'(still expandable)used: 29.8%->29.8%(1MB) / G1 Old Gen(still expandable)used: 93.8%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->87.5%(8MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 81.2%->84.0%(383MB) / Compressed Class Space(still expandable)used: 94.3%->94.3%(15MB) / Metaspace(still expandable)used: 99.2%->99.2%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.2%
+[78,084s][info][gc] GC(32) Pause Initial Mark (G1 Evacuation Pause) 431M->399M(512M) 49,436ms
+[78,084s][info][gc] GC(33) Concurrent Cycle
+
+Young Gen GC: - 27 G1 Young Generation (from G1 Evacuation Pause) 49 milliseconds; start-end times 77929-77978
+CodeHeap 'profiled nmethods'(still expandable)used: 29.8%->29.8%(1MB) / G1 Old Gen(still expandable)used: 93.3%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->100.0%(8MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 83.1%->85.3%(393MB) / Compressed Class Space(still expandable)used: 94.3%->94.3%(15MB) / Metaspace(still expandable)used: 99.3%->99.3%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.1%
+[79,417s][info][gc] GC(33) Pause Remark 402M->402M(512M) 2,591ms
+[79,927s][info][gc] GC(33) Pause Cleanup 406M->406M(512M) 0,414ms
+[79,928s][info][gc] GC(33) Concurrent Cycle 1843,854ms
+[83,236s][info][gc] GC(34) Pause Young (G1 Evacuation Pause) 436M->408M(512M) 49,254ms
+
+Young Gen GC: - 28 G1 Young Generation (from G1 Evacuation Pause) 50 milliseconds; start-end times 83080-83130
+CodeHeap 'profiled nmethods'(still expandable)used: 29.9%->29.9%(1MB) / G1 Old Gen(still expandable)used: 92.5%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->85.7%(7MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 84.1%->86.6%(403MB) / Compressed Class Space(still expandable)used: 94.3%->94.3%(15MB) / Metaspace(still expandable)used: 98.1%->98.1%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.0%
+[86,815s][info][gc] GC(35) Pause Initial Mark (G1 Evacuation Pause) 440M->416M(512M) 42,690ms
+[86,815s][info][gc] GC(36) Concurrent Cycle
+
+Young Gen GC: - 29 G1 Young Generation (from G1 Evacuation Pause) 43 milliseconds; start-end times 86666-86709
+CodeHeap 'profiled nmethods'(still expandable)used: 30.8%->30.8%(1MB) / G1 Old Gen(still expandable)used: 94.1%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->83.3%(6MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 85.3%->87.1%(412MB) / Compressed Class Space(still expandable)used: 94.4%->94.4%(15MB) / Metaspace(still expandable)used: 98.8%->98.8%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.0%
+[88,226s][info][gc] GC(36) Pause Remark 419M->419M(512M) 2,571ms
+[88,731s][info][gc] GC(36) Pause Cleanup 423M->423M(512M) 0,425ms
+[88,735s][info][gc] GC(36) Concurrent Cycle 1920,476ms
+[89,292s][info][gc] GC(37) Pause Initial Mark (G1 Humongous Allocation) 427M->420M(512M) 33,564ms
+[89,292s][info][gc] GC(38) Concurrent Cycle
+[89,301s][info][gc] GC(39) Pause Young (G1 Humongous Allocation) 420M->419M(512M) 7,562ms
+[90,134s][info][gc] GC(40) Pause Full (Allocation Failure) 419M->395M(512M) 833,095ms
+[90,955s][info][gc] GC(41) Pause Full (Allocation Failure) 395M->395M(512M) 821,242ms
+java.lang.OutOfMemoryError: Java heap space
+Dumping heap to ./dumps/ ...
+Unable to create ./dumps/: Is a directory
+[90,955s][info][gc] GC(38) Concurrent Cycle 1663,821ms
+>>> OUT OF MEMORY!
+>>> NUMBER OF ADDED ELEMENTS: 20767725
+Stopping...
+
+Young Gen GC: - 30 G1 Young Generation (from G1 Humongous Allocation) 34 milliseconds; start-end times 89152-89186
+CodeHeap 'profiled nmethods'(still expandable)used: 30.8%->30.8%(1MB) / G1 Old Gen(still expandable)used: 37.9%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->80.0%(5MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 85.8%->87.0%(417MB) / Compressed Class Space(still expandable)used: 94.4%->94.4%(15MB) / Metaspace(still expandable)used: 98.8%->98.8%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.0%
+
+Young Gen GC: - 31 G1 Young Generation (from G1 Humongous Allocation) 8 milliseconds; start-end times 89187-89195
+CodeHeap 'profiled nmethods'(still expandable)used: 30.8%->30.8%(1MB) / G1 Old Gen(still expandable)used: 0.0%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 85.7%->86.5%(420MB) / Compressed Class Space(still expandable)used: 94.4%->94.4%(15MB) / Metaspace(still expandable)used: 98.8%->98.8%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 2.0%
+
+Old Gen GC: - 1 G1 Old Generation (from Allocation Failure) 833 milliseconds; start-end times 89195-90028
+CodeHeap 'profiled nmethods'(still expandable)used: 30.8%->30.8%(1MB) / G1 Old Gen(still expandable)used: 0.0%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 86.5%->81.5%(396MB) / Compressed Class Space(still expandable)used: 94.4%->94.4%(15MB) / Metaspace(still expandable)used: 98.8%->98.8%(4MB) / G1 Eden Space(still expandable)used: 86.1%->86.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 0.9%
+
+Old Gen GC: - 2 G1 Old Generation (from Allocation Failure) 821 milliseconds; start-end times 90028-90849
+CodeHeap 'profiled nmethods'(still expandable)used: 30.8%->30.8%(1MB) / G1 Old Gen(still expandable)used: 0.0%->0.0%(1MB) / G1 Survivor Space(still expandable)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(still expandable)used: 82.2%->82.1%(396MB) / Compressed Class Space(still expandable)used: 94.4%->91.2%(14MB) / Metaspace(still expandable)used: 98.8%->98.8%(4MB) / G1 Eden Space(still expandable)used: 86.1%->79.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 46.4%->46.4%(2MB) /
+GC cumulated overhead 1.8%
+
+Process finished with exit code 0

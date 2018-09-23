@@ -1,0 +1,1387 @@
+-XX:+UseParallelOldGC (NEW)
+
+/usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,address=14000,server=y,suspend=n -Xms512m -Xmx512m -XX:MaxMetaspaceSize=256m -verbose:gc -Dcom.sun.management.jmxremote.port=15000 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -XX:+UseParallelOldGC -javaagent:/home/rabbit/BIN/idea/lib/idea_rt.jar=39959:/home/rabbit/BIN/idea/bin -Dfile.encoding=UTF-8 -classpath /home/rabbit/PROJECTS/otus-java-2018-06/L051gc/target/classes l05.Main
+[0.005s][info][gc] Using Parallel
+Listening for transport dt_socket at address: 14000
+com.sun.management.internal.GarbageCollectorExtImpl@7403c468
+com.sun.management.internal.GarbageCollectorExtImpl@43738a82
+[1,080s][info][gc] GC(0) Pause Young (Allocation Failure) 128M->3M(491M) 7,722ms
+
+Young Gen GC: - 1 PS Scavenge (from Allocation Failure) 8 milliseconds; start-end times 1026-1034
+CodeHeap 'profiled nmethods'(still expandable)used: 12.9%->12.9%(1MB) / PS Eden Space(fully expanded)used: 0.0%->14.8%(4MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->0.0%(1MB) / Compressed Class Space(still expandable)used: 85.3%->85.3%(2MB) / PS Old Gen(still expandable)used: 94.4%->94.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 49.3%->49.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 0.7%
+[1,240s][info][gc] GC(1) Pause Young (Allocation Failure) 131M->4M(491M) 6,666ms
+
+Young Gen GC: - 2 PS Scavenge (from Allocation Failure) 7 milliseconds; start-end times 1187-1194
+CodeHeap 'profiled nmethods'(still expandable)used: 13.8%->13.8%(1MB) / PS Eden Space(fully expanded)used: 14.8%->21.1%(5MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->0.0%(1MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.6%->94.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 52.8%->52.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 1.2%
+[1,387s][info][gc] GC(2) Pause Young (Allocation Failure) 132M->5M(491M) 8,956ms
+
+Young Gen GC: - 3 PS Scavenge (from Allocation Failure) 9 milliseconds; start-end times 1332-1341
+CodeHeap 'profiled nmethods'(still expandable)used: 13.9%->13.9%(1MB) / PS Eden Space(fully expanded)used: 21.1%->27.1%(6MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->0.0%(1MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 53.1%->53.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 1.7%
+[1,556s][info][gc] GC(3) Pause Young (Allocation Failure) 134M->6M(491M) 24,162ms
+
+Young Gen GC: - 4 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 1486-1510
+CodeHeap 'profiled nmethods'(still expandable)used: 14.1%->14.1%(1MB) / PS Eden Space(fully expanded)used: 27.1%->31.5%(7MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->0.0%(1MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 53.5%->53.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 3.1%
+[1,723s][info][gc] GC(4) Pause Young (Allocation Failure) 135M->8M(491M) 12,093ms
+
+Young Gen GC: - 5 PS Scavenge (from Allocation Failure) 12 milliseconds; start-end times 1665-1677
+CodeHeap 'profiled nmethods'(still expandable)used: 14.1%->14.1%(1MB) / PS Eden Space(fully expanded)used: 31.5%->38.2%(9MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->0.0%(1MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 53.9%->53.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 3.5%
+[1,948s][info][gc] GC(5) Pause Young (Allocation Failure) 134M->8M(499M) 27,896ms
+
+Young Gen GC: - 6 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 1874-1902
+CodeHeap 'profiled nmethods'(still expandable)used: 14.3%->14.3%(1MB) / PS Eden Space(fully expanded)used: 38.2%->42.5%(9MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->0.0%(1MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(still expandable)used: 98.5%->0.0%(1MB) / Metaspace(still expandable)used: 54.3%->54.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 4.6%
+[2,184s][info][gc] GC(6) Pause Young (Allocation Failure) 157M->10M(501M) 30,816ms
+
+Young Gen GC: - 7 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 2107-2138
+CodeHeap 'profiled nmethods'(still expandable)used: 14.3%->14.3%(1MB) / PS Eden Space(fully expanded)used: 94.0%->72.6%(7MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 0.0%->1.1%(4MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 54.4%->54.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.5%
+[2,341s][info][gc] GC(7) Pause Young (Allocation Failure) 159M->11M(502M) 9,821ms
+
+Young Gen GC: - 8 PS Scavenge (from Allocation Failure) 10 milliseconds; start-end times 2285-2295
+CodeHeap 'profiled nmethods'(still expandable)used: 14.4%->14.4%(1MB) / PS Eden Space(fully expanded)used: 62.7%->55.6%(7MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 1.1%->1.6%(6MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 54.6%->54.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.6%
+[2,500s][info][gc] GC(8) Pause Young (Allocation Failure) 161M->13M(501M) 10,528ms
+
+Young Gen GC: - 9 PS Scavenge (from Allocation Failure) 10 milliseconds; start-end times 2444-2454
+CodeHeap 'profiled nmethods'(still expandable)used: 14.6%->14.6%(1MB) / PS Eden Space(fully expanded)used: 58.3%->60.6%(7MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 1.6%->2.2%(8MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.7%->94.7%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 54.9%->54.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.6%
+[2,654s][info][gc] GC(9) Pause Young (Allocation Failure) 163M->15M(502M) 10,487ms
+
+Young Gen GC: - 10 PS Scavenge (from Allocation Failure) 11 milliseconds; start-end times 2598-2609
+CodeHeap 'profiled nmethods'(still expandable)used: 14.6%->14.6%(1MB) / PS Eden Space(fully expanded)used: 63.7%->53.0%(6MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 2.2%->2.8%(10MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.8%->94.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 55.3%->55.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.7%
+[2,849s][info][gc] GC(10) Pause Young (Allocation Failure) 166M->16M(494M) 14,843ms
+
+Young Gen GC: - 11 PS Scavenge (from Allocation Failure) 15 milliseconds; start-end times 2788-2803
+CodeHeap 'profiled nmethods'(still expandable)used: 14.6%->14.6%(1MB) / PS Eden Space(fully expanded)used: 55.8%->12.1%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 2.8%->4.3%(16MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.8%->94.8%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 56.1%->56.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.8%
+[3,018s][info][gc] GC(11) Pause Young (Allocation Failure) 167M->17M(501M) 13,295ms
+
+Young Gen GC: - 12 PS Scavenge (from Allocation Failure) 13 milliseconds; start-end times 2959-2972
+CodeHeap 'profiled nmethods'(still expandable)used: 14.7%->14.7%(1MB) / PS Eden Space(fully expanded)used: 77.0%->77.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 4.3%->4.7%(17MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.8%->94.8%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 56.5%->56.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.9%
+[3,166s][info][gc] GC(12) Pause Young (Allocation Failure) 166M->23M(501M) 8,717ms
+
+Young Gen GC: - 13 PS Scavenge (from Allocation Failure) 9 milliseconds; start-end times 3111-3120
+CodeHeap 'profiled nmethods'(still expandable)used: 14.7%->14.7%(1MB) / PS Eden Space(fully expanded)used: 11.5%->57.6%(6MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 4.7%->5.0%(18MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.9%->94.9%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 57.5%->57.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 5.9%
+[3,326s][info][gc] GC(13) Pause Young (Allocation Failure) 172M->24M(501M) 12,625ms
+
+Young Gen GC: - 14 PS Scavenge (from Allocation Failure) 12 milliseconds; start-end times 3268-3280
+CodeHeap 'profiled nmethods'(still expandable)used: 14.8%->14.8%(1MB) / PS Eden Space(fully expanded)used: 54.8%->11.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 5.0%->6.7%(23MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.9%->94.9%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 57.7%->57.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.0%
+[3,493s][info][gc] GC(14) Pause Young (Allocation Failure) 173M->25M(501M) 15,715ms
+
+Young Gen GC: - 15 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 3431-3447
+CodeHeap 'profiled nmethods'(still expandable)used: 14.9%->14.9%(1MB) / PS Eden Space(fully expanded)used: 11.5%->11.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 6.7%->7.0%(25MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.9%->94.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 58.3%->58.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.2%
+[3,646s][info][gc] GC(15) Pause Young (Allocation Failure) 174M->26M(501M) 13,532ms
+
+Young Gen GC: - 16 PS Scavenge (from Allocation Failure) 14 milliseconds; start-end times 3586-3600
+CodeHeap 'profiled nmethods'(still expandable)used: 14.9%->14.9%(1MB) / PS Eden Space(fully expanded)used: 11.0%->11.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 7.0%->7.3%(26MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 94.9%->94.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 58.3%->58.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.3%
+[3,813s][info][gc] GC(16) Pause Young (Allocation Failure) 175M->27M(501M) 14,430ms
+
+Young Gen GC: - 17 PS Scavenge (from Allocation Failure) 14 milliseconds; start-end times 3753-3767
+CodeHeap 'profiled nmethods'(still expandable)used: 15.0%->15.0%(1MB) / PS Eden Space(fully expanded)used: 11.0%->10.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 7.3%->7.7%(27MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.0%->95.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 58.7%->58.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.4%
+[3,977s][info][gc] GC(17) Pause Young (Allocation Failure) 176M->35M(499M) 10,488ms
+
+Young Gen GC: - 18 PS Scavenge (from Allocation Failure) 11 milliseconds; start-end times 3921-3932
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 10.7%->76.6%(9MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 7.7%->8.0%(28MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.0%->95.0%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.0%->59.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.4%
+[4,131s][info][gc] GC(18) Pause Young (Allocation Failure) 182M->36M(500M) 11,466ms
+
+Young Gen GC: - 19 PS Scavenge (from Allocation Failure) 11 milliseconds; start-end times 4074-4085
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 76.6%->10.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 8.0%->10.3%(36MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.0%->95.0%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.1%->59.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.4%
+[4,280s][info][gc] GC(19) Pause Young (Allocation Failure) 184M->37M(501M) 13,648ms
+
+Young Gen GC: - 20 PS Scavenge (from Allocation Failure) 14 milliseconds; start-end times 4220-4234
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 9.7%->10.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 10.3%->10.6%(37MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.0%->95.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.1%->59.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.5%
+[4,440s][info][gc] GC(20) Pause Young (Allocation Failure) 186M->38M(501M) 19,856ms
+
+Young Gen GC: - 21 PS Scavenge (from Allocation Failure) 20 milliseconds; start-end times 4375-4395
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 10.5%->10.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 10.6%->11.0%(38MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.0%->95.0%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.1%->59.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.8%
+[4,603s][info][gc] GC(21) Pause Young (Allocation Failure) 187M->39M(501M) 16,568ms
+
+Young Gen GC: - 22 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 4541-4557
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 10.5%->10.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 11.0%->11.3%(39MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.1%->95.1%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.5%->59.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 6.9%
+[4,765s][info][gc] GC(22) Pause Young (Allocation Failure) 189M->40M(501M) 17,185ms
+
+Young Gen GC: - 23 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 4702-4719
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 11.0%->11.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 11.3%->11.6%(40MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.1%->95.1%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.7%->59.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.0%
+[4,911s][info][gc] GC(23) Pause Young (Allocation Failure) 190M->42M(502M) 13,243ms
+
+Young Gen GC: - 24 PS Scavenge (from Allocation Failure) 13 milliseconds; start-end times 4853-4866
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 11.0%->11.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 11.6%->11.9%(41MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.1%->95.1%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 59.7%->59.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.0%
+[5,067s][info][gc] GC(24) Pause Young (Allocation Failure) 193M->43M(502M) 16,623ms
+
+Young Gen GC: - 25 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 5005-5021
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 11.5%->11.8%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 11.9%->12.3%(43MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.1%->95.1%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 60.7%->60.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.1%
+[5,226s][info][gc] GC(25) Pause Young (Allocation Failure) 194M->44M(503M) 17,273ms
+
+Young Gen GC: - 26 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 5163-5180
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 12.5%->12.1%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 12.3%->12.6%(44MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.1%->95.1%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.0%->61.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.2%
+[5,398s][info][gc] GC(26) Pause Young (Allocation Failure) 196M->55M(502M) 19,070ms
+
+Young Gen GC: - 27 PS Scavenge (from Allocation Failure) 20 milliseconds; start-end times 5333-5353
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 12.1%->11.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 12.6%->16.0%(55MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.2%->95.2%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.3%->61.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.4%
+[5,563s][info][gc] GC(27) Pause Young (Allocation Failure) 207M->56M(504M) 16,789ms
+
+Young Gen GC: - 28 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 5501-5518
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 12.1%->12.8%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 16.0%->16.3%(56MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.2%->95.2%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.5%->61.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.5%
+[5,731s][info][gc] GC(28) Pause Young (Allocation Failure) 210M->58M(503M) 16,247ms
+
+Young Gen GC: - 29 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 5669-5685
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 13.6%->13.9%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 16.3%->16.6%(57MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.2%->95.2%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.9%->61.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.5%
+[5,885s][info][gc] GC(29) Pause Young (Allocation Failure) 212M->59M(504M) 16,036ms
+
+Young Gen GC: - 30 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 5824-5840
+CodeHeap 'profiled nmethods'(still expandable)used: 15.1%->15.1%(1MB) / PS Eden Space(fully expanded)used: 14.8%->14.8%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 16.6%->17.0%(59MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.2%->95.2%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.9%->61.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.6%
+[6,047s][info][gc] GC(30) Pause Young (Allocation Failure) 214M->60M(504M) 17,340ms
+
+Young Gen GC: - 31 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 5984-6001
+CodeHeap 'profiled nmethods'(still expandable)used: 15.2%->15.2%(1MB) / PS Eden Space(fully expanded)used: 15.8%->16.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 17.0%->17.3%(60MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.2%->95.2%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.9%->61.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.7%
+[6,204s][info][gc] GC(31) Pause Young (Allocation Failure) 215M->61M(505M) 16,923ms
+
+Young Gen GC: - 32 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 6142-6159
+CodeHeap 'profiled nmethods'(still expandable)used: 15.3%->15.3%(1MB) / PS Eden Space(fully expanded)used: 16.2%->16.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 17.3%->17.6%(61MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.2%->95.2%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 61.9%->61.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.8%
+[6,366s][info][gc] GC(32) Pause Young (Allocation Failure) 218M->62M(505M) 17,656ms
+
+Young Gen GC: - 33 PS Scavenge (from Allocation Failure) 18 milliseconds; start-end times 6303-6321
+CodeHeap 'profiled nmethods'(still expandable)used: 15.3%->15.3%(1MB) / PS Eden Space(fully expanded)used: 17.4%->16.9%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 17.6%->18.0%(62MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.3%->95.3%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 63.1%->63.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.8%
+[6,527s][info][gc] GC(33) Pause Young (Allocation Failure) 219M->63M(506M) 17,172ms
+
+Young Gen GC: - 34 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 6464-6481
+CodeHeap 'profiled nmethods'(still expandable)used: 15.3%->15.3%(1MB) / PS Eden Space(fully expanded)used: 18.2%->18.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 18.0%->18.3%(63MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.3%->95.3%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 63.2%->63.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.9%
+[6,701s][info][gc] GC(34) Pause Young (Allocation Failure) 221M->65M(505M) 20,763ms
+
+Young Gen GC: - 35 PS Scavenge (from Allocation Failure) 20 milliseconds; start-end times 6635-6655
+CodeHeap 'profiled nmethods'(still expandable)used: 15.3%->15.3%(1MB) / PS Eden Space(fully expanded)used: 18.7%->18.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 18.3%->18.6%(64MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.3%->95.3%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 63.2%->63.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.0%
+[6,864s][info][gc] GC(35) Pause Young (Allocation Failure) 223M->66M(506M) 18,528ms
+
+Young Gen GC: - 36 PS Scavenge (from Allocation Failure) 18 milliseconds; start-end times 6800-6818
+CodeHeap 'profiled nmethods'(still expandable)used: 15.4%->15.4%(1MB) / PS Eden Space(fully expanded)used: 19.7%->20.8%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 18.6%->19.0%(66MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.3%->95.3%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 63.2%->63.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.1%
+[7,043s][info][gc] GC(36) Pause Young (Allocation Failure) 225M->67M(506M) 17,203ms
+
+Young Gen GC: - 37 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 6980-6997
+CodeHeap 'profiled nmethods'(still expandable)used: 15.8%->15.8%(1MB) / PS Eden Space(fully expanded)used: 22.7%->22.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 19.0%->19.3%(67MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.0%->64.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.1%
+[7,202s][info][gc] GC(37) Pause Young (Allocation Failure) 226M->68M(507M) 16,650ms
+
+Young Gen GC: - 38 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 7140-7156
+CodeHeap 'profiled nmethods'(still expandable)used: 15.9%->15.9%(1MB) / PS Eden Space(fully expanded)used: 22.7%->22.1%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 19.3%->19.7%(68MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.4%->64.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.2%
+[7,363s][info][gc] GC(38) Pause Young (Allocation Failure) 229M->85M(507M) 22,731ms
+
+Young Gen GC: - 39 PS Scavenge (from Allocation Failure) 22 milliseconds; start-end times 7295-7317
+CodeHeap 'profiled nmethods'(still expandable)used: 15.9%->15.9%(1MB) / PS Eden Space(fully expanded)used: 24.3%->22.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 19.7%->24.6%(85MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.6%->64.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.3%
+[7,526s][info][gc] GC(39) Pause Young (Allocation Failure) 245M->86M(507M) 19,314ms
+
+Young Gen GC: - 40 PS Scavenge (from Allocation Failure) 19 milliseconds; start-end times 7461-7480
+CodeHeap 'profiled nmethods'(still expandable)used: 15.9%->15.9%(1MB) / PS Eden Space(fully expanded)used: 22.5%->24.3%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 24.6%->24.9%(86MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.6%->64.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.3%
+[7,692s][info][gc] GC(40) Pause Young (Allocation Failure) 247M->87M(507M) 16,006ms
+
+Young Gen GC: - 41 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 7631-7647
+CodeHeap 'profiled nmethods'(still expandable)used: 15.9%->15.9%(1MB) / PS Eden Space(fully expanded)used: 27.0%->27.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 24.9%->25.3%(87MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.8%->64.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.4%
+[7,856s][info][gc] GC(41) Pause Young (Allocation Failure) 249M->88M(508M) 17,677ms
+
+Young Gen GC: - 42 PS Scavenge (from Allocation Failure) 18 milliseconds; start-end times 7792-7810
+CodeHeap 'profiled nmethods'(still expandable)used: 16.0%->16.0%(1MB) / PS Eden Space(fully expanded)used: 27.7%->27.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 25.3%->25.6%(88MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.8%->64.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.4%
+[8,021s][info][gc] GC(42) Pause Young (Allocation Failure) 251M->90M(508M) 17,501ms
+
+Young Gen GC: - 43 PS Scavenge (from Allocation Failure) 18 milliseconds; start-end times 7958-7976
+CodeHeap 'profiled nmethods'(still expandable)used: 16.0%->16.0%(1MB) / PS Eden Space(fully expanded)used: 31.2%->31.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 25.6%->26.0%(89MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.8%->64.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.5%
+[8,183s][info][gc] GC(43) Pause Young (Allocation Failure) 252M->91M(508M) 16,236ms
+
+Young Gen GC: - 44 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 8121-8137
+CodeHeap 'profiled nmethods'(still expandable)used: 16.2%->16.2%(1MB) / PS Eden Space(fully expanded)used: 31.2%->32.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 26.0%->26.3%(91MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 64.9%->64.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.5%
+[8,351s][info][gc] GC(44) Pause Young (Allocation Failure) 254M->92M(508M) 16,607ms
+
+Young Gen GC: - 45 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 8289-8306
+CodeHeap 'profiled nmethods'(still expandable)used: 16.3%->16.3%(1MB) / PS Eden Space(fully expanded)used: 32.0%->32.8%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 26.3%->26.7%(92MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.0%->65.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.5%
+[8,513s][info][gc] GC(45) Pause Young (Allocation Failure) 255M->93M(508M) 17,031ms
+
+Young Gen GC: - 46 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 8450-8467
+CodeHeap 'profiled nmethods'(still expandable)used: 16.3%->16.3%(1MB) / PS Eden Space(fully expanded)used: 37.5%->35.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 26.7%->27.0%(93MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.4%->95.4%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.6%
+[8,677s][info][gc] GC(46) Pause Young (Allocation Failure) 257M->94M(508M) 16,385ms
+
+Young Gen GC: - 47 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 8615-8632
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 35.7%->36.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 27.0%->27.4%(94MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.6%
+[8,842s][info][gc] GC(47) Pause Young (Allocation Failure) 258M->96M(509M) 18,368ms
+
+Young Gen GC: - 48 PS Scavenge (from Allocation Failure) 19 milliseconds; start-end times 8778-8797
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 36.6%->35.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 27.4%->27.7%(95MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.7%
+[9,010s][info][gc] GC(48) Pause Young (Allocation Failure) 260M->97M(509M) 16,462ms
+
+Young Gen GC: - 49 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 8948-8964
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 41.6%->42.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 27.7%->28.1%(97MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.6%->65.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.7%
+[9,179s][info][gc] GC(49) Pause Young (Allocation Failure) 261M->98M(509M) 18,996ms
+
+Young Gen GC: - 50 PS Scavenge (from Allocation Failure) 19 milliseconds; start-end times 9114-9133
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 42.7%->41.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 28.1%->28.4%(98MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.6%->65.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.7%
+[9,362s][info][gc] GC(50) Pause Young (Allocation Failure) 263M->99M(509M) 19,228ms
+
+Young Gen GC: - 51 PS Scavenge (from Allocation Failure) 19 milliseconds; start-end times 9297-9316
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 41.6%->41.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 28.4%->28.8%(99MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.8%
+[9,526s][info][gc] GC(51) Pause Young (Allocation Failure) 264M->101M(509M) 18,020ms
+
+Young Gen GC: - 52 PS Scavenge (from Allocation Failure) 18 milliseconds; start-end times 9463-9481
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 41.6%->42.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 28.8%->29.2%(100MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.8%
+[9,696s][info][gc] GC(52) Pause Young (Allocation Failure) 266M->102M(509M) 16,616ms
+
+Young Gen GC: - 53 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 9634-9650
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 51.2%->51.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 29.2%->29.5%(101MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.8%
+[9,860s][info][gc] GC(53) Pause Young (Allocation Failure) 267M->103M(509M) 16,872ms
+
+Young Gen GC: - 54 PS Scavenge (from Allocation Failure) 17 milliseconds; start-end times 9798-9815
+CodeHeap 'profiled nmethods'(still expandable)used: 16.7%->16.7%(1MB) / PS Eden Space(fully expanded)used: 51.2%->51.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 29.5%->29.9%(103MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.8%
+[10,030s][info][gc] GC(54) Pause Young (Allocation Failure) 268M->104M(509M) 16,539ms
+
+Young Gen GC: - 55 PS Scavenge (from Allocation Failure) 16 milliseconds; start-end times 9968-9984
+CodeHeap 'profiled nmethods'(still expandable)used: 16.8%->16.8%(1MB) / PS Eden Space(fully expanded)used: 51.2%->50.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 29.9%->30.2%(104MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 8.8%
+[10,193s][info][gc] GC(55) Pause Young (Allocation Failure) 270M->129M(509M) 30,678ms
+
+Young Gen GC: - 56 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 10117-10148
+CodeHeap 'profiled nmethods'(still expandable)used: 16.8%->16.8%(1MB) / PS Eden Space(fully expanded)used: 50.0%->43.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 30.2%->37.5%(129MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.0%
+[10,363s][info][gc] GC(56) Pause Young (Allocation Failure) 294M->130M(509M) 19,179ms
+
+Young Gen GC: - 57 PS Scavenge (from Allocation Failure) 19 milliseconds; start-end times 10298-10317
+CodeHeap 'profiled nmethods'(still expandable)used: 16.8%->16.8%(1MB) / PS Eden Space(fully expanded)used: 43.7%->50.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 37.5%->37.8%(130MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 65.9%->65.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.0%
+[10,535s][info][gc] GC(57) Pause Young (Allocation Failure) 295M->131M(510M) 24,218ms
+
+Young Gen GC: - 58 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 10465-10489
+CodeHeap 'profiled nmethods'(still expandable)used: 16.8%->16.8%(1MB) / PS Eden Space(fully expanded)used: 50.0%->52.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 37.8%->38.1%(131MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 66.0%->66.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.1%
+[10,710s][info][gc] GC(58) Pause Young (Allocation Failure) 298M->132M(510M) 23,303ms
+
+Young Gen GC: - 59 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 10641-10664
+CodeHeap 'profiled nmethods'(still expandable)used: 16.9%->16.9%(1MB) / PS Eden Space(fully expanded)used: 65.6%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 38.1%->38.5%(132MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 66.0%->66.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.2%
+[10,883s][info][gc] GC(59) Pause Young (Allocation Failure) 299M->134M(510M) 24,272ms
+
+Young Gen GC: - 60 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 10813-10838
+CodeHeap 'profiled nmethods'(still expandable)used: 16.9%->16.9%(1MB) / PS Eden Space(fully expanded)used: 64.0%->62.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 38.5%->38.9%(133MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 66.0%->66.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.3%
+[11,056s][info][gc] GC(60) Pause Young (Allocation Failure) 300M->135M(510M) 23,337ms
+
+Young Gen GC: - 61 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 10987-11011
+CodeHeap 'profiled nmethods'(still expandable)used: 16.9%->16.9%(1MB) / PS Eden Space(fully expanded)used: 62.5%->65.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 38.9%->39.2%(135MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 66.1%->66.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.3%
+[11,227s][info][gc] GC(61) Pause Young (Allocation Failure) 301M->136M(510M) 22,959ms
+
+Young Gen GC: - 62 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 11159-11182
+CodeHeap 'profiled nmethods'(still expandable)used: 16.9%->16.9%(1MB) / PS Eden Space(fully expanded)used: 65.6%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 39.2%->39.6%(136MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 66.1%->66.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.4%
+[11,401s][info][gc] GC(62) Pause Young (Allocation Failure) 303M->137M(510M) 22,069ms
+
+Young Gen GC: - 63 PS Scavenge (from Allocation Failure) 22 milliseconds; start-end times 11333-11355
+CodeHeap 'profiled nmethods'(still expandable)used: 17.1%->17.1%(1MB) / PS Eden Space(fully expanded)used: 64.0%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 39.6%->39.9%(137MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.5%->95.5%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 66.2%->66.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.4%
+[11,574s][info][gc] GC(63) Pause Young (Allocation Failure) 304M->139M(510M) 23,760ms
+
+Young Gen GC: - 64 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 11505-11528
+CodeHeap 'profiled nmethods'(still expandable)used: 17.1%->17.1%(1MB) / PS Eden Space(fully expanded)used: 64.0%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 39.9%->40.3%(138MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.2%->67.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.5%
+[11,752s][info][gc] GC(64) Pause Young (Allocation Failure) 305M->140M(510M) 24,569ms
+
+Young Gen GC: - 65 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 11681-11706
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 64.0%->65.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 40.3%->40.7%(140MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.3%->67.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.6%
+[11,924s][info][gc] GC(65) Pause Young (Allocation Failure) 306M->141M(510M) 22,551ms
+
+Young Gen GC: - 66 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 11855-11878
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 65.6%->65.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 40.7%->41.0%(141MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.4%->67.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.6%
+[12,098s][info][gc] GC(66) Pause Young (Allocation Failure) 308M->142M(510M) 22,050ms
+
+Young Gen GC: - 67 PS Scavenge (from Allocation Failure) 22 milliseconds; start-end times 12031-12053
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 65.6%->62.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 41.0%->41.4%(142MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.4%->67.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.7%
+[12,270s][info][gc] GC(67) Pause Young (Allocation Failure) 309M->143M(510M) 23,437ms
+
+Young Gen GC: - 68 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 12201-12224
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 62.5%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 41.4%->41.7%(143MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.4%->67.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.7%
+[12,446s][info][gc] GC(68) Pause Young (Allocation Failure) 310M->145M(510M) 22,038ms
+
+Young Gen GC: - 69 PS Scavenge (from Allocation Failure) 22 milliseconds; start-end times 12378-12400
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 64.0%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 41.7%->42.1%(144MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.5%->67.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.8%
+[12,616s][info][gc] GC(69) Pause Young (Allocation Failure) 311M->146M(510M) 23,204ms
+
+Young Gen GC: - 70 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 12548-12571
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 64.0%->65.6%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 42.1%->42.5%(146MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.5%->67.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.8%
+[12,789s][info][gc] GC(70) Pause Young (Allocation Failure) 313M->147M(510M) 22,339ms
+
+Young Gen GC: - 71 PS Scavenge (from Allocation Failure) 22 milliseconds; start-end times 12721-12743
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 65.6%->64.0%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 42.5%->42.8%(147MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(still expandable)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.5%->67.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.8%
+[12,962s][info][gc] GC(71) Pause Young (Allocation Failure) 314M->148M(510M) 24,586ms
+
+Young Gen GC: - 72 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 12892-12917
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 42.8%->43.2%(148MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.5%->67.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.9%
+[13,140s][info][gc] GC(72) Pause Young (Allocation Failure) 316M->150M(510M) 23,964ms
+
+Young Gen GC: - 73 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 13070-13094
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 43.2%->43.6%(149MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 67.6%->67.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.0%
+[13,313s][info][gc] GC(73) Pause Young (Allocation Failure) 317M->151M(510M) 24,289ms
+
+Young Gen GC: - 74 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 13243-13267
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 43.6%->43.9%(151MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.1%->68.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.0%
+[13,488s][info][gc] GC(74) Pause Young (Allocation Failure) 318M->152M(510M) 24,387ms
+
+Young Gen GC: - 75 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 13418-13443
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 43.9%->44.3%(152MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.1%->68.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.1%
+[13,662s][info][gc] GC(75) Pause Young (Allocation Failure) 320M->153M(510M) 24,511ms
+
+Young Gen GC: - 76 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 13592-13616
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 44.3%->44.6%(153MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.1%->68.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.1%
+[13,857s][info][gc] GC(76) Pause Young (Allocation Failure) 321M->155M(510M) 38,737ms
+
+Young Gen GC: - 77 PS Scavenge (from Allocation Failure) 39 milliseconds; start-end times 13773-13812
+CodeHeap 'profiled nmethods'(still expandable)used: 17.4%->17.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 44.6%->45.0%(154MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.3%->68.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.2%
+[14,044s][info][gc] GC(77) Pause Young (Allocation Failure) 322M->156M(510M) 26,250ms
+
+Young Gen GC: - 78 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 13972-13998
+CodeHeap 'profiled nmethods'(still expandable)used: 17.7%->17.7%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 45.0%->45.4%(156MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.6%->95.6%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.3%->68.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.3%
+[14,244s][info][gc] GC(78) Pause Young (Allocation Failure) 323M->157M(510M) 35,640ms
+
+Young Gen GC: - 79 PS Scavenge (from Allocation Failure) 36 milliseconds; start-end times 14163-14199
+CodeHeap 'profiled nmethods'(still expandable)used: 17.8%->17.8%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 45.4%->45.7%(157MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.3%->68.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.4%
+[14,420s][info][gc] GC(79) Pause Young (Allocation Failure) 325M->158M(510M) 24,745ms
+
+Young Gen GC: - 80 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 14350-14374
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 45.7%->46.1%(158MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.4%->68.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.4%
+[14,618s][info][gc] GC(80) Pause Young (Allocation Failure) 326M->160M(510M) 30,292ms
+
+Young Gen GC: - 81 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 14542-14572
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 46.1%->46.5%(159MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 99.9%->0.0%(1MB) / Metaspace(still expandable)used: 68.5%->68.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.5%
+[14,793s][info][gc] GC(81) Pause Young (Allocation Failure) 327M->196M(510M) 45,555ms
+
+Young Gen GC: - 82 PS Scavenge (from Allocation Failure) 46 milliseconds; start-end times 14702-14748
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->68.7%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 46.5%->57.1%(196MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.6%->68.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.7%
+[14,971s][info][gc] GC(82) Pause Young (Allocation Failure) 363M->197M(510M) 22,384ms
+
+Young Gen GC: - 83 PS Scavenge (from Allocation Failure) 22 milliseconds; start-end times 14903-14925
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 68.7%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 57.1%->57.4%(197MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.6%->68.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.7%
+[15,149s][info][gc] GC(83) Pause Young (Allocation Failure) 365M->198M(510M) 27,707ms
+
+Young Gen GC: - 84 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 15075-15103
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 57.4%->57.8%(198MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.9%->68.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.8%
+[15,327s][info][gc] GC(84) Pause Young (Allocation Failure) 366M->200M(510M) 24,557ms
+
+Young Gen GC: - 85 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 15257-15282
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 57.8%->58.1%(199MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 68.9%->68.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.8%
+[15,501s][info][gc] GC(85) Pause Young (Allocation Failure) 367M->201M(510M) 23,842ms
+
+Young Gen GC: - 86 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 15432-15456
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 58.1%->58.5%(200MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 69.1%->69.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.8%
+[15,692s][info][gc] GC(86) Pause Young (Allocation Failure) 368M->202M(510M) 27,753ms
+
+Young Gen GC: - 87 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 15619-15646
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 58.5%->58.9%(202MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 69.4%->69.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.9%
+[15,886s][info][gc] GC(87) Pause Young (Allocation Failure) 370M->203M(510M) 28,428ms
+
+Young Gen GC: - 88 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 15812-15841
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 58.9%->59.2%(203MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 69.4%->69.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 10.9%
+[16,083s][info][gc] GC(88) Pause Young (Allocation Failure) 371M->204M(510M) 28,675ms
+
+Young Gen GC: - 89 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 16009-16037
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 59.2%->59.6%(204MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.7%->95.7%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 69.6%->69.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.0%
+[16,273s][info][gc] GC(89) Pause Young (Allocation Failure) 372M->206M(510M) 28,348ms
+
+Young Gen GC: - 90 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 16199-16227
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 59.6%->60.0%(205MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.0%
+[16,474s][info][gc] GC(90) Pause Young (Allocation Failure) 373M->207M(510M) 35,648ms
+
+Young Gen GC: - 91 PS Scavenge (from Allocation Failure) 36 milliseconds; start-end times 16392-16428
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 60.0%->60.3%(207MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.1%
+[16,650s][info][gc] GC(91) Pause Young (Allocation Failure) 375M->208M(510M) 25,121ms
+
+Young Gen GC: - 92 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 16579-16604
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 60.3%->60.7%(208MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.1%
+[16,838s][info][gc] GC(92) Pause Young (Allocation Failure) 376M->209M(510M) 29,620ms
+
+Young Gen GC: - 93 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 16763-16793
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 60.7%->61.1%(209MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.2%
+[17,024s][info][gc] GC(93) Pause Young (Allocation Failure) 377M->211M(510M) 28,545ms
+
+Young Gen GC: - 94 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 16949-16978
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 61.1%->61.4%(210MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.2%
+[17,207s][info][gc] GC(94) Pause Young (Allocation Failure) 378M->212M(510M) 25,804ms
+
+Young Gen GC: - 95 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 17136-17162
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 61.4%->61.8%(212MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.3%
+[17,395s][info][gc] GC(95) Pause Young (Allocation Failure) 379M->213M(510M) 28,934ms
+
+Young Gen GC: - 96 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 17320-17349
+CodeHeap 'profiled nmethods'(still expandable)used: 17.9%->17.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 61.8%->62.1%(213MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.6%->70.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.3%
+[17,592s][info][gc] GC(96) Pause Young (Allocation Failure) 381M->214M(510M) 28,887ms
+
+Young Gen GC: - 97 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 17517-17546
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 62.1%->62.5%(214MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.9%->70.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.3%
+[17,775s][info][gc] GC(97) Pause Young (Allocation Failure) 382M->216M(510M) 31,219ms
+
+Young Gen GC: - 98 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 17698-17730
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 62.5%->62.9%(215MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.9%->70.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.4%
+[17,959s][info][gc] GC(98) Pause Young (Allocation Failure) 383M->217M(510M) 28,892ms
+
+Young Gen GC: - 99 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 17885-17913
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 62.9%->63.2%(217MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 70.9%->70.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.4%
+[18,139s][info][gc] GC(99) Pause Young (Allocation Failure) 384M->218M(510M) 26,380ms
+
+Young Gen GC: - 100 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 18067-18093
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 63.2%->63.6%(218MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.0%->71.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.5%
+[18,321s][info][gc] GC(100) Pause Young (Allocation Failure) 386M->219M(510M) 25,948ms
+
+Young Gen GC: - 101 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 18250-18276
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 63.6%->64.0%(219MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.1%->71.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.5%
+[18,497s][info][gc] GC(101) Pause Young (Allocation Failure) 387M->221M(510M) 24,894ms
+
+Young Gen GC: - 102 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 18426-18451
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 64.0%->64.3%(220MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.1%->71.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.5%
+[18,677s][info][gc] GC(102) Pause Young (Allocation Failure) 388M->222M(510M) 24,753ms
+
+Young Gen GC: - 103 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 18606-18631
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 64.3%->64.7%(222MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.1%->71.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.5%
+[18,866s][info][gc] GC(103) Pause Young (Allocation Failure) 389M->223M(510M) 29,644ms
+
+Young Gen GC: - 104 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 18791-18820
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 64.7%->65.1%(223MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.2%->71.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.6%
+[19,051s][info][gc] GC(104) Pause Young (Allocation Failure) 391M->224M(510M) 25,754ms
+
+Young Gen GC: - 105 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 18979-19005
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 65.1%->65.4%(224MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.2%->71.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.6%
+[19,234s][info][gc] GC(105) Pause Young (Allocation Failure) 392M->226M(510M) 28,243ms
+
+Young Gen GC: - 106 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 19160-19188
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 65.4%->65.8%(225MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.2%->71.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.6%
+[19,431s][info][gc] GC(106) Pause Young (Allocation Failure) 393M->227M(510M) 24,533ms
+
+Young Gen GC: - 107 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 19361-19386
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 65.8%->66.1%(227MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.2%->71.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.7%
+[19,605s][info][gc] GC(107) Pause Young (Allocation Failure) 394M->228M(510M) 25,107ms
+
+Young Gen GC: - 108 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 19535-19560
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 66.1%->66.5%(228MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.4%->71.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.7%
+[19,786s][info][gc] GC(108) Pause Young (Allocation Failure) 396M->229M(510M) 24,945ms
+
+Young Gen GC: - 109 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 19715-19740
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->89.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 66.5%->66.9%(229MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.6%->71.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.7%
+[19,960s][info][gc] GC(109) Pause Young (Allocation Failure) 397M->231M(510M) 24,946ms
+
+Young Gen GC: - 110 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 19890-19915
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 89.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 66.9%->67.2%(230MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.6%->71.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.7%
+[20,138s][info][gc] GC(110) Pause Young (Allocation Failure) 398M->232M(510M) 24,698ms
+
+Young Gen GC: - 111 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 20068-20093
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 67.2%->67.6%(232MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.6%->71.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.7%
+[20,320s][info][gc] GC(111) Pause Young (Allocation Failure) 399M->233M(510M) 31,446ms
+
+Young Gen GC: - 112 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 20242-20274
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->83.3%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 67.6%->68.0%(233MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.6%->71.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.8%
+[20,502s][info][gc] GC(112) Pause Young (Allocation Failure) 401M->234M(510M) 29,712ms
+
+Young Gen GC: - 113 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 20427-20457
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 83.3%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 68.0%->68.3%(234MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.6%->71.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.8%
+[20,676s][info][gc] GC(113) Pause Young (Allocation Failure) 402M->236M(510M) 25,139ms
+
+Young Gen GC: - 114 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 20606-20631
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 68.3%->68.7%(235MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.8%->71.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.9%
+[20,858s][info][gc] GC(114) Pause Young (Allocation Failure) 403M->237M(510M) 29,237ms
+
+Young Gen GC: - 115 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 20783-20813
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 68.7%->69.1%(237MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.8%->71.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.9%
+[21,033s][info][gc] GC(115) Pause Young (Allocation Failure) 404M->238M(510M) 26,325ms
+
+Young Gen GC: - 116 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 20961-20987
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 69.1%->69.4%(238MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 71.8%->71.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.9%
+[21,214s][info][gc] GC(116) Pause Young (Allocation Failure) 406M->239M(510M) 29,402ms
+
+Young Gen GC: - 117 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 21139-21168
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 69.4%->69.8%(239MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.2%->72.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.0%
+[21,393s][info][gc] GC(117) Pause Young (Allocation Failure) 407M->241M(510M) 29,832ms
+
+Young Gen GC: - 118 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 21317-21347
+CodeHeap 'profiled nmethods'(still expandable)used: 18.0%->18.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 69.8%->70.2%(240MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.2%->72.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.0%
+[21,566s][info][gc] GC(118) Pause Young (Allocation Failure) 401M->242M(510M) 24,491ms
+
+Young Gen GC: - 119 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 21496-21521
+CodeHeap 'profiled nmethods'(still expandable)used: 18.3%->18.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->81.2%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 70.2%->70.5%(241MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 95.9%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.0%
+[21,748s][info][gc] GC(119) Pause Young (Allocation Failure) 409M->295M(510M) 66,698ms
+
+Young Gen GC: - 120 PS Scavenge (from Allocation Failure) 67 milliseconds; start-end times 21636-21703
+CodeHeap 'profiled nmethods'(still expandable)used: 18.3%->18.3%(1MB) / PS Eden Space(fully expanded)used: 81.2%->58.3%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 70.5%->86.3%(295MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[21,928s][info][gc] GC(120) Pause Young (Allocation Failure) 463M->297M(510M) 23,935ms
+
+Young Gen GC: - 121 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 21858-21882
+CodeHeap 'profiled nmethods'(still expandable)used: 18.3%->18.3%(1MB) / PS Eden Space(fully expanded)used: 58.3%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 86.3%->86.6%(296MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[22,102s][info][gc] GC(121) Pause Young (Allocation Failure) 464M->298M(510M) 25,367ms
+
+Young Gen GC: - 122 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 22031-22057
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 86.6%->86.9%(298MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[22,284s][info][gc] GC(122) Pause Young (Allocation Failure) 465M->299M(510M) 27,818ms
+
+Young Gen GC: - 123 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 22211-22238
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 86.9%->87.3%(299MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[22,458s][info][gc] GC(123) Pause Young (Allocation Failure) 467M->300M(510M) 25,564ms
+
+Young Gen GC: - 124 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 22387-22413
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 87.3%->87.7%(300MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[22,640s][info][gc] GC(124) Pause Young (Allocation Failure) 468M->302M(510M) 27,730ms
+
+Young Gen GC: - 125 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 22567-22594
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 87.7%->88.0%(301MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[22,817s][info][gc] GC(125) Pause Young (Allocation Failure) 469M->303M(510M) 26,604ms
+
+Young Gen GC: - 126 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 22745-22771
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 88.0%->88.4%(303MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.3%->72.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[23,000s][info][gc] GC(126) Pause Young (Allocation Failure) 470M->304M(510M) 28,482ms
+
+Young Gen GC: - 127 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 22926-22955
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 88.4%->88.8%(304MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.5%->72.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[23,178s][info][gc] GC(127) Pause Young (Allocation Failure) 472M->305M(510M) 28,360ms
+
+Young Gen GC: - 128 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 23104-23133
+CodeHeap 'profiled nmethods'(still expandable)used: 18.5%->18.5%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 88.8%->89.1%(305MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.6%->72.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[23,360s][info][gc] GC(128) Pause Young (Allocation Failure) 473M->307M(510M) 28,089ms
+
+Young Gen GC: - 129 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 23286-23314
+CodeHeap 'profiled nmethods'(still expandable)used: 18.7%->18.7%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 89.1%->89.5%(306MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[23,541s][info][gc] GC(129) Pause Young (Allocation Failure) 474M->308M(510M) 28,169ms
+
+Young Gen GC: - 130 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 23467-23495
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 89.5%->89.9%(308MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[23,722s][info][gc] GC(130) Pause Young (Allocation Failure) 475M->309M(510M) 28,316ms
+
+Young Gen GC: - 131 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 23648-23676
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 89.9%->90.2%(309MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[23,899s][info][gc] GC(131) Pause Young (Allocation Failure) 477M->310M(510M) 28,007ms
+
+Young Gen GC: - 132 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 23825-23853
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 90.2%->90.6%(310MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[24,080s][info][gc] GC(132) Pause Young (Allocation Failure) 478M->312M(510M) 27,728ms
+
+Young Gen GC: - 133 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 24007-24035
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 90.6%->91.0%(311MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[24,259s][info][gc] GC(133) Pause Young (Allocation Failure) 479M->313M(510M) 29,465ms
+
+Young Gen GC: - 134 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 24184-24214
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 91.0%->91.3%(313MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[24,442s][info][gc] GC(134) Pause Young (Allocation Failure) 480M->314M(510M) 28,917ms
+
+Young Gen GC: - 135 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 24367-24396
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 91.3%->91.7%(314MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[24,622s][info][gc] GC(135) Pause Young (Allocation Failure) 482M->315M(510M) 29,376ms
+
+Young Gen GC: - 136 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 24547-24576
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 91.7%->92.0%(315MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[24,805s][info][gc] GC(136) Pause Young (Allocation Failure) 483M->317M(510M) 28,481ms
+
+Young Gen GC: - 137 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 24731-24759
+CodeHeap 'profiled nmethods'(still expandable)used: 18.8%->18.8%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 92.0%->92.4%(316MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[24,985s][info][gc] GC(137) Pause Young (Allocation Failure) 484M->318M(510M) 29,619ms
+
+Young Gen GC: - 138 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 24909-24939
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 92.4%->92.8%(317MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[25,162s][info][gc] GC(138) Pause Young (Allocation Failure) 485M->319M(510M) 26,086ms
+
+Young Gen GC: - 139 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 25091-25117
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 92.8%->93.1%(319MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[25,341s][info][gc] GC(139) Pause Young (Allocation Failure) 487M->320M(510M) 29,421ms
+
+Young Gen GC: - 140 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 25266-25295
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 93.1%->93.5%(320MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[25,522s][info][gc] GC(140) Pause Young (Allocation Failure) 488M->321M(510M) 28,775ms
+
+Young Gen GC: - 141 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 25447-25476
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 93.5%->93.9%(321MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[25,700s][info][gc] GC(141) Pause Young (Allocation Failure) 489M->323M(510M) 28,980ms
+
+Young Gen GC: - 142 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 25625-25654
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 93.9%->94.2%(322MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[25,885s][info][gc] GC(142) Pause Young (Allocation Failure) 490M->324M(510M) 29,765ms
+
+Young Gen GC: - 143 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 25809-25839
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 94.2%->94.6%(324MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[26,063s][info][gc] GC(143) Pause Young (Allocation Failure) 491M->325M(510M) 29,323ms
+
+Young Gen GC: - 144 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 25988-26017
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 94.6%->94.9%(325MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[26,246s][info][gc] GC(144) Pause Young (Allocation Failure) 493M->326M(510M) 26,050ms
+
+Young Gen GC: - 145 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 26174-26200
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 94.9%->95.3%(326MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[26,421s][info][gc] GC(145) Pause Young (Allocation Failure) 494M->328M(510M) 26,239ms
+
+Young Gen GC: - 146 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 26350-26376
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 95.3%->95.7%(327MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[26,602s][info][gc] GC(146) Pause Young (Allocation Failure) 495M->329M(510M) 26,381ms
+
+Young Gen GC: - 147 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 26530-26556
+CodeHeap 'profiled nmethods'(still expandable)used: 18.9%->18.9%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 95.7%->96.0%(329MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[26,782s][info][gc] GC(147) Pause Young (Allocation Failure) 496M->330M(510M) 29,178ms
+
+Young Gen GC: - 148 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 26707-26736
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 96.0%->96.4%(330MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[26,964s][info][gc] GC(148) Pause Young (Allocation Failure) 498M->331M(510M) 29,774ms
+
+Young Gen GC: - 149 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 26889-26919
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 96.4%->96.8%(331MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[27,144s][info][gc] GC(149) Pause Young (Allocation Failure) 499M->333M(510M) 30,350ms
+
+Young Gen GC: - 150 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 27068-27098
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 96.8%->97.1%(332MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[27,344s][info][gc] GC(150) Pause Young (Allocation Failure) 500M->334M(510M) 41,432ms
+
+Young Gen GC: - 151 PS Scavenge (from Allocation Failure) 41 milliseconds; start-end times 27257-27298
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 97.1%->97.5%(334MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[27,532s][info][gc] GC(151) Pause Young (Allocation Failure) 501M->335M(510M) 27,938ms
+
+Young Gen GC: - 152 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 27458-27486
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 97.5%->97.9%(335MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[27,717s][info][gc] GC(152) Pause Young (Allocation Failure) 503M->336M(510M) 29,078ms
+
+Young Gen GC: - 153 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 27642-27671
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 97.9%->98.2%(336MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 13.0%
+[27,919s][info][gc] GC(153) Pause Young (Allocation Failure) 504M->338M(510M) 47,307ms
+
+Young Gen GC: - 154 PS Scavenge (from Allocation Failure) 47 milliseconds; start-end times 27826-27873
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 98.2%->98.6%(337MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 13.0%
+[28,143s][info][gc] GC(154) Pause Young (Allocation Failure) 505M->339M(510M) 50,251ms
+
+Young Gen GC: - 155 PS Scavenge (from Allocation Failure) 50 milliseconds; start-end times 28047-28097
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 98.6%->99.0%(339MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 13.1%
+[28,359s][info][gc] GC(155) Pause Young (Allocation Failure) 506M->340M(510M) 55,984ms
+[30,807s][info][gc] GC(156) Pause Full (Ergonomics) 340M->239M(510M) 2448,017ms
+
+Young Gen GC: - 156 PS Scavenge (from Allocation Failure) 56 milliseconds; start-end times 28257-28313
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.0%->99.3%(340MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 13.2%
+
+Old Gen GC: - 1 PS MarkSweep (from Ergonomics) 2448 milliseconds; start-end times 28313-30761
+CodeHeap 'profiled nmethods'(still expandable)used: 19.0%->19.0%(1MB) / PS Eden Space(fully expanded)used: 85.4%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.3%->69.9%(240MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 0.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 7.9%
+[30,983s][info][gc] GC(157) Pause Young (Allocation Failure) 406M->240M(510M) 19,053ms
+
+Young Gen GC: - 157 PS Scavenge (from Allocation Failure) 19 milliseconds; start-end times 30918-30937
+CodeHeap 'profiled nmethods'(still expandable)used: 19.1%->19.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 69.9%->69.9%(240MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.1%
+[31,176s][info][gc] GC(158) Pause Young (Allocation Failure) 407M->241M(510M) 30,667ms
+
+Young Gen GC: - 158 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 31100-31130
+CodeHeap 'profiled nmethods'(still expandable)used: 19.1%->19.1%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 69.9%->70.3%(241MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[31,380s][info][gc] GC(159) Pause Young (Allocation Failure) 409M->242M(510M) 30,713ms
+
+Young Gen GC: - 159 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 31304-31334
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 70.3%->70.7%(242MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[31,561s][info][gc] GC(160) Pause Young (Allocation Failure) 410M->244M(510M) 25,057ms
+
+Young Gen GC: - 160 PS Scavenge (from Allocation Failure) 25 milliseconds; start-end times 31491-31516
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 70.7%->71.0%(243MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[31,749s][info][gc] GC(161) Pause Young (Allocation Failure) 411M->245M(510M) 25,398ms
+
+Young Gen GC: - 161 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 31677-31703
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 87.5%->83.3%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 71.0%->71.4%(245MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[31,943s][info][gc] GC(162) Pause Young (Allocation Failure) 412M->246M(510M) 27,465ms
+
+Young Gen GC: - 162 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 31870-31897
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 83.3%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 71.4%->71.8%(246MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[32,134s][info][gc] GC(163) Pause Young (Allocation Failure) 414M->247M(510M) 23,455ms
+
+Young Gen GC: - 163 PS Scavenge (from Allocation Failure) 23 milliseconds; start-end times 32065-32088
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 71.8%->72.1%(247MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[32,312s][info][gc] GC(164) Pause Young (Allocation Failure) 415M->249M(510M) 26,896ms
+
+Young Gen GC: - 164 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 32239-32266
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 72.1%->72.5%(248MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[32,498s][info][gc] GC(165) Pause Young (Allocation Failure) 416M->250M(510M) 28,067ms
+
+Young Gen GC: - 165 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 32424-32452
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 72.5%->72.9%(249MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[32,678s][info][gc] GC(166) Pause Young (Allocation Failure) 417M->251M(510M) 29,826ms
+
+Young Gen GC: - 166 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 32603-32633
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 72.9%->73.2%(251MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[32,867s][info][gc] GC(167) Pause Young (Allocation Failure) 419M->252M(510M) 24,291ms
+
+Young Gen GC: - 167 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 32797-32821
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 73.2%->73.6%(252MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[33,049s][info][gc] GC(168) Pause Young (Allocation Failure) 420M->253M(510M) 28,019ms
+
+Young Gen GC: - 168 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 32975-33003
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 73.6%->73.9%(253MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[33,236s][info][gc] GC(169) Pause Young (Allocation Failure) 421M->255M(510M) 26,428ms
+
+Young Gen GC: - 169 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 33164-33190
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 73.9%->74.3%(254MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[33,416s][info][gc] GC(170) Pause Young (Allocation Failure) 422M->256M(510M) 28,328ms
+
+Young Gen GC: - 170 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 33342-33371
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 74.3%->74.7%(256MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.8%->95.8%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 72.8%->72.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[33,602s][info][gc] GC(171) Pause Young (Allocation Failure) 423M->257M(510M) 25,666ms
+
+Young Gen GC: - 171 PS Scavenge (from Allocation Failure) 26 milliseconds; start-end times 33531-33557
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 74.7%->75.0%(257MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.4%->73.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[33,783s][info][gc] GC(172) Pause Young (Allocation Failure) 425M->258M(510M) 28,833ms
+
+Young Gen GC: - 172 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 33709-33738
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 75.0%->75.4%(258MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.5%->73.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[33,971s][info][gc] GC(173) Pause Young (Allocation Failure) 426M->260M(510M) 28,374ms
+
+Young Gen GC: - 173 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 33897-33925
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 75.4%->75.8%(259MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.5%->73.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[34,151s][info][gc] GC(174) Pause Young (Allocation Failure) 427M->261M(510M) 26,843ms
+
+Young Gen GC: - 174 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 34079-34106
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->89.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 75.8%->76.1%(261MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[34,338s][info][gc] GC(175) Pause Young (Allocation Failure) 428M->262M(510M) 29,257ms
+
+Young Gen GC: - 175 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 34263-34293
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 89.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 76.1%->76.5%(262MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[34,509s][info][gc] GC(176) Pause Young (Allocation Failure) 420M->263M(510M) 24,634ms
+
+Young Gen GC: - 176 PS Scavenge (from Allocation Failure) 24 milliseconds; start-end times 34439-34463
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->79.1%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 76.5%->76.9%(263MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 93.9%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[34,672s][info][gc] GC(177) Pause Young (Allocation Failure) 431M->432M(510M) 53,916ms
+[35,547s][info][gc] GC(178) Pause Full (Ergonomics) 432M->290M(510M) 875,524ms
+
+Young Gen GC: - 177 PS Scavenge (from Allocation Failure) 54 milliseconds; start-end times 34572-34626
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 79.1%->79.1%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 76.9%->77.2%(264MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->100.0%(168MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+
+Old Gen GC: - 2 PS MarkSweep (from Ergonomics) 875 milliseconds; start-end times 34626-35501
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 79.1%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 77.2%->85.0%(291MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 9.3%
+[35,741s][info][gc] GC(179) Pause Young (Allocation Failure) 458M->291M(510M) 27,896ms
+
+Young Gen GC: - 178 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 35668-35696
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 0.0%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 85.0%->85.0%(291MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[35,942s][info][gc] GC(180) Pause Young (Allocation Failure) 459M->293M(510M) 31,854ms
+
+Young Gen GC: - 179 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 35864-35896
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 85.0%->85.4%(292MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[36,127s][info][gc] GC(181) Pause Young (Allocation Failure) 460M->294M(510M) 31,216ms
+
+Young Gen GC: - 180 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 36050-36082
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 85.4%->85.8%(294MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.2%
+[36,313s][info][gc] GC(182) Pause Young (Allocation Failure) 461M->295M(510M) 29,244ms
+
+Young Gen GC: - 181 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 36238-36267
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 85.8%->86.1%(295MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.6%->73.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[36,505s][info][gc] GC(183) Pause Young (Allocation Failure) 463M->296M(510M) 32,634ms
+
+Young Gen GC: - 182 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 36427-36459
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 86.1%->86.5%(296MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 73.9%->73.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[36,706s][info][gc] GC(184) Pause Young (Allocation Failure) 464M->298M(510M) 34,450ms
+
+Young Gen GC: - 183 PS Scavenge (from Allocation Failure) 34 milliseconds; start-end times 36626-36660
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 86.5%->86.9%(297MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[36,893s][info][gc] GC(185) Pause Young (Allocation Failure) 465M->299M(510M) 31,187ms
+
+Young Gen GC: - 184 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 36817-36848
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 86.9%->87.2%(299MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[37,083s][info][gc] GC(186) Pause Young (Allocation Failure) 466M->300M(510M) 27,351ms
+
+Young Gen GC: - 185 PS Scavenge (from Allocation Failure) 27 milliseconds; start-end times 37010-37037
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 87.2%->87.6%(300MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.3%
+[37,270s][info][gc] GC(187) Pause Young (Allocation Failure) 468M->301M(510M) 31,902ms
+
+Young Gen GC: - 186 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 37193-37225
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 87.6%->87.9%(301MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[37,463s][info][gc] GC(188) Pause Young (Allocation Failure) 469M->303M(510M) 30,861ms
+
+Young Gen GC: - 187 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 37387-37417
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 87.9%->88.3%(302MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[37,651s][info][gc] GC(189) Pause Young (Allocation Failure) 470M->304M(510M) 29,155ms
+
+Young Gen GC: - 188 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 37576-37606
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 88.3%->88.7%(303MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[37,851s][info][gc] GC(190) Pause Young (Allocation Failure) 471M->305M(510M) 33,434ms
+
+Young Gen GC: - 189 PS Scavenge (from Allocation Failure) 34 milliseconds; start-end times 37772-37806
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 88.7%->89.0%(305MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[38,040s][info][gc] GC(191) Pause Young (Allocation Failure) 473M->306M(510M) 32,015ms
+
+Young Gen GC: - 190 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 37962-37994
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 89.0%->89.4%(306MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.0%->74.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.4%
+[38,232s][info][gc] GC(192) Pause Young (Allocation Failure) 474M->308M(510M) 32,539ms
+
+Young Gen GC: - 191 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 38154-38186
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 89.4%->89.8%(307MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.9%->74.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[38,415s][info][gc] GC(193) Pause Young (Allocation Failure) 475M->309M(510M) 31,835ms
+
+Young Gen GC: - 192 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 38338-38370
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 89.8%->90.1%(308MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.9%->74.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[38,608s][info][gc] GC(194) Pause Young (Allocation Failure) 476M->310M(510M) 31,029ms
+
+Young Gen GC: - 193 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 38531-38562
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 90.1%->90.5%(310MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.9%->74.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[38,791s][info][gc] GC(195) Pause Young (Allocation Failure) 478M->311M(510M) 28,616ms
+
+Young Gen GC: - 194 PS Scavenge (from Allocation Failure) 28 milliseconds; start-end times 38717-38745
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 90.5%->90.9%(311MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.9%->74.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[38,984s][info][gc] GC(196) Pause Young (Allocation Failure) 479M->312M(510M) 31,994ms
+
+Young Gen GC: - 195 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 38906-38938
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 90.9%->91.2%(312MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.9%->74.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.5%
+[39,171s][info][gc] GC(197) Pause Young (Allocation Failure) 480M->314M(510M) 32,902ms
+
+Young Gen GC: - 196 PS Scavenge (from Allocation Failure) 33 milliseconds; start-end times 39092-39125
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 91.2%->91.6%(313MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.0%->75.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[39,367s][info][gc] GC(198) Pause Young (Allocation Failure) 481M->315M(510M) 31,682ms
+
+Young Gen GC: - 197 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 39290-39321
+CodeHeap 'profiled nmethods'(still expandable)used: 20.4%->20.4%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 91.6%->91.9%(315MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.0%->75.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[39,553s][info][gc] GC(199) Pause Young (Allocation Failure) 482M->316M(510M) 30,322ms
+
+Young Gen GC: - 198 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 39477-39508
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 91.9%->92.3%(316MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[39,752s][info][gc] GC(200) Pause Young (Allocation Failure) 484M->317M(510M) 34,180ms
+
+Young Gen GC: - 199 PS Scavenge (from Allocation Failure) 34 milliseconds; start-end times 39672-39706
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 92.3%->92.7%(317MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[39,938s][info][gc] GC(201) Pause Young (Allocation Failure) 485M->319M(510M) 30,072ms
+
+Young Gen GC: - 200 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 39862-39892
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 92.7%->93.0%(318MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[40,129s][info][gc] GC(202) Pause Young (Allocation Failure) 486M->320M(510M) 29,352ms
+
+Young Gen GC: - 201 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 40054-40084
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 93.0%->93.4%(320MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[40,317s][info][gc] GC(203) Pause Young (Allocation Failure) 487M->321M(510M) 31,735ms
+
+Young Gen GC: - 202 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 40239-40271
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 93.4%->93.8%(321MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[40,514s][info][gc] GC(204) Pause Young (Allocation Failure) 489M->322M(510M) 30,090ms
+
+Young Gen GC: - 203 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 40438-40468
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 93.8%->94.1%(322MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[40,703s][info][gc] GC(205) Pause Young (Allocation Failure) 490M->324M(510M) 33,449ms
+
+Young Gen GC: - 204 PS Scavenge (from Allocation Failure) 34 milliseconds; start-end times 40623-40657
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 94.1%->94.5%(323MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.3%->74.3%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[40,896s][info][gc] GC(206) Pause Young (Allocation Failure) 491M->325M(510M) 30,007ms
+
+Young Gen GC: - 205 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 40821-40851
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 94.5%->94.9%(325MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[41,085s][info][gc] GC(207) Pause Young (Allocation Failure) 492M->326M(510M) 31,281ms
+
+Young Gen GC: - 206 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 41008-41040
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->83.3%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 94.9%->95.2%(326MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.7%
+[41,283s][info][gc] GC(208) Pause Young (Allocation Failure) 494M->327M(510M) 31,783ms
+
+Young Gen GC: - 207 PS Scavenge (from Allocation Failure) 32 milliseconds; start-end times 41206-41238
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 83.3%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 95.2%->95.6%(327MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[41,477s][info][gc] GC(209) Pause Young (Allocation Failure) 495M->329M(510M) 39,516ms
+
+Young Gen GC: - 208 PS Scavenge (from Allocation Failure) 39 milliseconds; start-end times 41392-41431
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 95.6%->95.9%(328MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[41,669s][info][gc] GC(210) Pause Young (Allocation Failure) 496M->330M(510M) 32,655ms
+
+Young Gen GC: - 209 PS Scavenge (from Allocation Failure) 33 milliseconds; start-end times 41591-41624
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 95.9%->96.3%(330MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[41,857s][info][gc] GC(211) Pause Young (Allocation Failure) 497M->331M(510M) 29,434ms
+
+Young Gen GC: - 210 PS Scavenge (from Allocation Failure) 29 milliseconds; start-end times 41782-41811
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 96.3%->96.7%(331MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[42,053s][info][gc] GC(212) Pause Young (Allocation Failure) 499M->332M(510M) 30,896ms
+
+Young Gen GC: - 211 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 41977-42008
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 96.7%->97.0%(332MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.8%
+[42,247s][info][gc] GC(213) Pause Young (Allocation Failure) 500M->334M(510M) 35,929ms
+
+Young Gen GC: - 212 PS Scavenge (from Allocation Failure) 36 milliseconds; start-end times 42165-42201
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 97.0%->97.4%(333MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 74.6%->74.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[42,445s][info][gc] GC(214) Pause Young (Allocation Failure) 501M->335M(510M) 33,668ms
+
+Young Gen GC: - 213 PS Scavenge (from Allocation Failure) 34 milliseconds; start-end times 42365-42399
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 97.4%->97.8%(335MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.7%->75.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[42,631s][info][gc] GC(215) Pause Young (Allocation Failure) 502M->336M(510M) 32,385ms
+
+Young Gen GC: - 214 PS Scavenge (from Allocation Failure) 33 milliseconds; start-end times 42553-42586
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 97.8%->98.1%(336MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.7%->75.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[42,828s][info][gc] GC(216) Pause Young (Allocation Failure) 504M->337M(510M) 36,839ms
+
+Young Gen GC: - 215 PS Scavenge (from Allocation Failure) 37 milliseconds; start-end times 42745-42782
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 98.1%->98.5%(337MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.7%->75.7%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[43,011s][info][gc] GC(217) Pause Young (Allocation Failure) 505M->339M(510M) 30,416ms
+
+Young Gen GC: - 216 PS Scavenge (from Allocation Failure) 30 milliseconds; start-end times 42935-42965
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 98.5%->98.9%(338MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.8%->75.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.9%
+[43,201s][info][gc] GC(218) Pause Young (Allocation Failure) 506M->340M(510M) 31,691ms
+
+Young Gen GC: - 217 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 43124-43155
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->87.5%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 98.9%->99.2%(339MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.8%->75.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 13.0%
+[43,384s][info][gc] GC(219) Pause Young (Allocation Failure) 507M->341M(510M) 30,716ms
+[45,114s][info][gc] GC(220) Pause Full (Ergonomics) 341M->340M(510M) 1730,011ms
+
+Young Gen GC: - 218 PS Scavenge (from Allocation Failure) 31 milliseconds; start-end times 43307-43338
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 87.5%->85.4%(2MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.2%->99.6%(341MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.8%->75.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 13.0%
+
+Old Gen GC: - 3 PS MarkSweep (from Ergonomics) 1730 milliseconds; start-end times 43338-45068
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 85.4%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.6%->99.8%(341MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 0.0%->0.0%(1MB) / Metaspace(still expandable)used: 75.8%->75.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 11.2%
+[46,048s][info][gc] GC(221) Pause Full (Ergonomics) 508M->342M(510M) 776,662ms
+
+Old Gen GC: - 4 PS MarkSweep (from Ergonomics) 777 milliseconds; start-end times 45225-46002
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.8%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->0.3%(1MB) / Metaspace(still expandable)used: 75.9%->75.9%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 12.6%
+[46,960s][info][gc] GC(222) Pause Full (Ergonomics) 508M->343M(510M) 754,185ms
+
+Old Gen GC: - 5 PS MarkSweep (from Ergonomics) 754 milliseconds; start-end times 46160-46914
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->1.0%(2MB) / Metaspace(still expandable)used: 76.8%->76.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 14.0%
+[47,853s][info][gc] GC(223) Pause Full (Ergonomics) 508M->344M(510M) 742,975ms
+
+Old Gen GC: - 6 PS MarkSweep (from Ergonomics) 743 milliseconds; start-end times 47064-47807
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->1.7%(4MB) / Metaspace(still expandable)used: 76.8%->76.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 15.3%
+[48,873s][info][gc] GC(224) Pause Full (Ergonomics) 508M->345M(510M) 865,750ms
+
+Old Gen GC: - 7 PS MarkSweep (from Ergonomics) 865 milliseconds; start-end times 47962-48827
+CodeHeap 'profiled nmethods'(still expandable)used: 20.3%->20.3%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->2.5%(5MB) / Metaspace(still expandable)used: 76.8%->76.8%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 16.7%
+[49,784s][info][gc] GC(225) Pause Full (Ergonomics) 508M->346M(510M) 758,070ms
+
+Old Gen GC: - 8 PS MarkSweep (from Ergonomics) 758 milliseconds; start-end times 48980-49738
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->3.2%(6MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 17.9%
+[50,769s][info][gc] GC(226) Pause Full (Ergonomics) 508M->348M(510M) 839,309ms
+
+Old Gen GC: - 9 PS MarkSweep (from Ergonomics) 839 milliseconds; start-end times 49884-50723
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->3.9%(7MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 19.2%
+[51,637s][info][gc] GC(227) Pause Full (Ergonomics) 508M->349M(510M) 724,773ms
+
+Old Gen GC: - 10 PS MarkSweep (from Ergonomics) 724 milliseconds; start-end times 50867-51591
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->4.6%(8MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 20.3%
+[52,610s][info][gc] GC(228) Pause Full (Ergonomics) 508M->350M(510M) 830,351ms
+
+Old Gen GC: - 11 PS MarkSweep (from Ergonomics) 830 milliseconds; start-end times 51734-52564
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->5.3%(9MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 21.5%
+[53,522s][info][gc] GC(229) Pause Full (Ergonomics) 508M->351M(510M) 770,719ms
+
+Old Gen GC: - 12 PS MarkSweep (from Ergonomics) 771 milliseconds; start-end times 52706-53477
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->6.0%(11MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 22.6%
+[54,398s][info][gc] GC(230) Pause Full (Ergonomics) 508M->352M(510M) 734,684ms
+
+Old Gen GC: - 13 PS MarkSweep (from Ergonomics) 734 milliseconds; start-end times 53618-54352
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->6.7%(12MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 23.6%
+[55,363s][info][gc] GC(231) Pause Full (Ergonomics) 508M->353M(510M) 824,951ms
+
+Old Gen GC: - 14 PS MarkSweep (from Ergonomics) 825 milliseconds; start-end times 54492-55317
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->7.4%(13MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 24.7%
+[56,234s][info][gc] GC(232) Pause Full (Ergonomics) 508M->355M(510M) 732,140ms
+
+Old Gen GC: - 15 PS MarkSweep (from Ergonomics) 732 milliseconds; start-end times 55456-56188
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->8.0%(14MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 25.6%
+[57,208s][info][gc] GC(233) Pause Full (Ergonomics) 508M->356M(510M) 836,737ms
+
+Old Gen GC: - 16 PS MarkSweep (from Ergonomics) 836 milliseconds; start-end times 56326-57162
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->8.7%(15MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 26.6%
+[58,160s][info][gc] GC(234) Pause Full (Ergonomics) 508M->357M(510M) 815,360ms
+
+Old Gen GC: - 17 PS MarkSweep (from Ergonomics) 815 milliseconds; start-end times 57299-58114
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->9.4%(16MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 27.6%
+[59,130s][info][gc] GC(235) Pause Full (Ergonomics) 508M->358M(510M) 834,623ms
+
+Old Gen GC: - 18 PS MarkSweep (from Ergonomics) 835 milliseconds; start-end times 58249-59084
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->10.0%(17MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 28.5%
+[60,102s][info][gc] GC(236) Pause Full (Ergonomics) 508M->359M(510M) 837,367ms
+
+Old Gen GC: - 19 PS MarkSweep (from Ergonomics) 837 milliseconds; start-end times 59219-60056
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->10.7%(19MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 29.5%
+[60,979s][info][gc] GC(237) Pause Full (Ergonomics) 508M->360M(510M) 744,481ms
+
+Old Gen GC: - 20 PS MarkSweep (from Ergonomics) 745 milliseconds; start-end times 60189-60934
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->11.4%(20MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 30.3%
+[61,857s][info][gc] GC(238) Pause Full (Ergonomics) 508M->361M(510M) 745,395ms
+
+Old Gen GC: - 21 PS MarkSweep (from Ergonomics) 745 milliseconds; start-end times 61066-61811
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->12.0%(21MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 31.0%
+[62,776s][info][gc] GC(239) Pause Full (Ergonomics) 508M->362M(510M) 787,408ms
+
+Old Gen GC: - 22 PS MarkSweep (from Ergonomics) 787 milliseconds; start-end times 61943-62730
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->12.6%(22MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 31.8%
+[63,738s][info][gc] GC(240) Pause Full (Ergonomics) 508M->363M(510M) 830,921ms
+
+Old Gen GC: - 23 PS MarkSweep (from Ergonomics) 831 milliseconds; start-end times 62861-63692
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->13.3%(23MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 32.7%
+[64,629s][info][gc] GC(241) Pause Full (Ergonomics) 508M->364M(510M) 761,962ms
+
+Old Gen GC: - 24 PS MarkSweep (from Ergonomics) 762 milliseconds; start-end times 63821-64583
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->13.9%(24MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 33.4%
+[65,622s][info][gc] GC(242) Pause Full (Ergonomics) 508M->365M(510M) 863,825ms
+
+Old Gen GC: - 25 PS MarkSweep (from Ergonomics) 864 milliseconds; start-end times 64712-65576
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->14.6%(25MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 34.2%
+[66,525s][info][gc] GC(243) Pause Full (Ergonomics) 508M->367M(510M) 775,330ms
+
+Old Gen GC: - 26 PS MarkSweep (from Ergonomics) 775 milliseconds; start-end times 65704-66479
+CodeHeap 'profiled nmethods'(still expandable)used: 20.0%->20.0%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->15.2%(26MB) / Metaspace(still expandable)used: 65.5%->65.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 34.9%
+[67,410s][info][gc] GC(244) Pause Full (Ergonomics) 508M->368M(510M) 758,885ms
+
+Old Gen GC: - 27 PS MarkSweep (from Ergonomics) 758 milliseconds; start-end times 66606-67364
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->15.8%(27MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 35.6%
+[68,303s][info][gc] GC(245) Pause Full (Ergonomics) 508M->369M(510M) 767,067ms
+
+Old Gen GC: - 28 PS MarkSweep (from Ergonomics) 767 milliseconds; start-end times 67491-68258
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->16.4%(28MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 36.2%
+[69,280s][info][gc] GC(246) Pause Full (Ergonomics) 508M->370M(510M) 851,355ms
+
+Old Gen GC: - 29 PS MarkSweep (from Ergonomics) 852 milliseconds; start-end times 68383-69235
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->17.0%(29MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 36.9%
+[70,179s][info][gc] GC(247) Pause Full (Ergonomics) 508M->371M(510M) 774,941ms
+
+Old Gen GC: - 30 PS MarkSweep (from Ergonomics) 775 milliseconds; start-end times 69358-70133
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->17.6%(30MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 37.6%
+[71,087s][info][gc] GC(248) Pause Full (Ergonomics) 508M->372M(510M) 785,764ms
+
+Old Gen GC: - 31 PS MarkSweep (from Ergonomics) 786 milliseconds; start-end times 70256-71042
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->18.2%(31MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 38.2%
+[71,983s][info][gc] GC(249) Pause Full (Ergonomics) 508M->373M(510M) 772,915ms
+
+Old Gen GC: - 32 PS MarkSweep (from Ergonomics) 773 milliseconds; start-end times 71164-71937
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->18.8%(32MB) / Metaspace(still expandable)used: 65.4%->65.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 38.8%
+[72,878s][info][gc] GC(250) Pause Full (Ergonomics) 508M->374M(510M) 774,267ms
+
+Old Gen GC: - 33 PS MarkSweep (from Ergonomics) 774 milliseconds; start-end times 72058-72832
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->19.4%(33MB) / Metaspace(still expandable)used: 66.1%->66.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 39.4%
+[73,887s][info][gc] GC(251) Pause Full (Ergonomics) 508M->375M(510M) 889,218ms
+
+Old Gen GC: - 34 PS MarkSweep (from Ergonomics) 889 milliseconds; start-end times 72953-73842
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->20.0%(34MB) / Metaspace(still expandable)used: 66.1%->66.1%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 40.1%
+[74,801s][info][gc] GC(252) Pause Full (Ergonomics) 508M->376M(510M) 793,361ms
+
+Old Gen GC: - 35 PS MarkSweep (from Ergonomics) 793 milliseconds; start-end times 73962-74755
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->20.6%(35MB) / Metaspace(still expandable)used: 66.2%->66.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 40.6%
+[75,739s][info][gc] GC(253) Pause Full (Ergonomics) 508M->377M(510M) 820,153ms
+
+Old Gen GC: - 36 PS MarkSweep (from Ergonomics) 820 milliseconds; start-end times 74873-75693
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->21.2%(36MB) / Metaspace(still expandable)used: 66.2%->66.2%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 41.2%
+[76,641s][info][gc] GC(254) Pause Full (Ergonomics) 508M->378M(510M) 783,313ms
+
+Old Gen GC: - 37 PS MarkSweep (from Ergonomics) 783 milliseconds; start-end times 75812-76595
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->21.8%(37MB) / Metaspace(still expandable)used: 67.4%->67.4%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 41.7%
+[77,595s][info][gc] GC(255) Pause Full (Ergonomics) 508M->379M(510M) 836,643ms
+
+Old Gen GC: - 38 PS MarkSweep (from Ergonomics) 837 milliseconds; start-end times 76713-77550
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 95.9%->95.9%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->22.3%(38MB) / Metaspace(still expandable)used: 67.5%->67.5%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 42.3%
+[78,517s][info][gc] GC(256) Pause Full (Ergonomics) 508M->379M(510M) 806,017ms
+
+Old Gen GC: - 39 PS MarkSweep (from Ergonomics) 806 milliseconds; start-end times 77665-78471
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->22.9%(39MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 42.8%
+[79,509s][info][gc] GC(257) Pause Full (Ergonomics) 508M->380M(510M) 876,869ms
+
+Old Gen GC: - 40 PS MarkSweep (from Ergonomics) 877 milliseconds; start-end times 78586-79463
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->23.5%(40MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 43.4%
+[80,414s][info][gc] GC(258) Pause Full (Ergonomics) 508M->381M(510M) 790,250ms
+
+Old Gen GC: - 41 PS MarkSweep (from Ergonomics) 790 milliseconds; start-end times 79578-80368
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->24.0%(41MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 43.9%
+[81,323s][info][gc] GC(259) Pause Full (Ergonomics) 508M->382M(510M) 795,970ms
+
+Old Gen GC: - 42 PS MarkSweep (from Ergonomics) 796 milliseconds; start-end times 80482-81278
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->24.6%(42MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 44.4%
+[82,230s][info][gc] GC(260) Pause Full (Ergonomics) 508M->383M(510M) 794,331ms
+
+Old Gen GC: - 43 PS MarkSweep (from Ergonomics) 794 milliseconds; start-end times 81390-82184
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->25.1%(43MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 44.9%
+[83,142s][info][gc] GC(261) Pause Full (Ergonomics) 508M->384M(510M) 799,086ms
+
+Old Gen GC: - 44 PS MarkSweep (from Ergonomics) 799 milliseconds; start-end times 82297-83096
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->25.7%(44MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 45.3%
+[84,056s][info][gc] GC(262) Pause Full (Ergonomics) 508M->385M(510M) 803,737ms
+
+Old Gen GC: - 45 PS MarkSweep (from Ergonomics) 804 milliseconds; start-end times 83207-84011
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->26.2%(45MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 45.8%
+[84,968s][info][gc] GC(263) Pause Full (Ergonomics) 508M->386M(510M) 799,078ms
+
+Old Gen GC: - 46 PS MarkSweep (from Ergonomics) 799 milliseconds; start-end times 84123-84922
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->26.8%(45MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 46.2%
+[85,882s][info][gc] GC(264) Pause Full (Ergonomics) 508M->387M(510M) 805,284ms
+
+Old Gen GC: - 47 PS MarkSweep (from Ergonomics) 805 milliseconds; start-end times 85032-85837
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->27.3%(46MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 46.7%
+[86,833s][info][gc] GC(265) Pause Full (Ergonomics) 508M->388M(510M) 832,545ms
+
+Old Gen GC: - 48 PS MarkSweep (from Ergonomics) 833 milliseconds; start-end times 85955-86788
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->27.8%(47MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 47.1%
+[87,782s][info][gc] GC(266) Pause Full (Ergonomics) 508M->389M(510M) 841,616ms
+
+Old Gen GC: - 49 PS MarkSweep (from Ergonomics) 842 milliseconds; start-end times 86895-87737
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->28.4%(48MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 47.6%
+[88,769s][info][gc] GC(267) Pause Full (Ergonomics) 508M->389M(510M) 879,794ms
+
+Old Gen GC: - 50 PS MarkSweep (from Ergonomics) 880 milliseconds; start-end times 87844-88724
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->28.9%(49MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 48.0%
+[89,696s][info][gc] GC(268) Pause Full (Ergonomics) 508M->390M(510M) 819,916ms
+
+Old Gen GC: - 51 PS MarkSweep (from Ergonomics) 820 milliseconds; start-end times 88831-89651
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->29.4%(50MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 48.5%
+[90,725s][info][gc] GC(269) Pause Full (Ergonomics) 508M->391M(510M) 922,687ms
+
+Old Gen GC: - 52 PS MarkSweep (from Ergonomics) 923 milliseconds; start-end times 89756-90679
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->29.9%(51MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 48.9%
+[91,768s][info][gc] GC(270) Pause Full (Ergonomics) 508M->392M(510M) 937,915ms
+
+Old Gen GC: - 53 PS MarkSweep (from Ergonomics) 938 milliseconds; start-end times 90784-91722
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->30.5%(52MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 49.4%
+[92,688s][info][gc] GC(271) Pause Full (Ergonomics) 508M->393M(510M) 815,796ms
+
+Old Gen GC: - 54 PS MarkSweep (from Ergonomics) 816 milliseconds; start-end times 91826-92642
+CodeHeap 'profiled nmethods'(still expandable)used: 20.1%->20.1%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 100.0%->31.0%(52MB) / Metaspace(still expandable)used: 69.0%->69.0%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 49.8%
+[93,706s][info][gc] GC(272) Pause Full (Ergonomics) 487M->394M(510M) 934,554ms
+[95,027s][info][gc] GC(273) Pause Full (Allocation Failure) 394M->393M(510M) 1320,935ms
+
+Old Gen GC: - 55 PS MarkSweep (from Ergonomics) 934 milliseconds; start-end times 92726-93660
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->87.9%(2MB) / PS Old Gen(still expandable)used: 96.0%->96.0%(13MB) / PS Survivor Space(fully expanded)used: 87.3%->31.4%(53MB) / Metaspace(still expandable)used: 67.6%->67.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 50.2%
+
+Old Gen GC: - 56 PS MarkSweep (from Allocation Failure) 1321 milliseconds; start-end times 93660-94981
+CodeHeap 'profiled nmethods'(still expandable)used: 20.2%->20.2%(1MB) / PS Eden Space(fully expanded)used: 0.0%->0.0%(1MB) / CodeHeap 'non-profiled nmethods'(fully expanded)used: 99.9%->99.9%(342MB) / Compressed Class Space(still expandable)used: 87.9%->83.8%(2MB) / PS Old Gen(still expandable)used: 96.0%->94.4%(13MB) / PS Survivor Space(fully expanded)used: 31.4%->31.4%(53MB) / Metaspace(still expandable)used: 67.6%->67.6%(2MB) / CodeHeap 'non-nmethods'(still expandable)used: 45.7%->45.7%(2MB) /
+GC cumulated overhead 50.9%
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3688)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:242)
+	at java.base/java.util.ArrayList.add(ArrayList.java:467)
+	at java.base/java.util.ArrayList.add(ArrayList.java:480)
+	at l05.Stand.start(Stand.java:16)
+	at l05.Main.main(Main.java:19)
+
+Process finished with exit code 1

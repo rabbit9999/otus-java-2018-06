@@ -33,7 +33,6 @@ public class MyGCMonitor {
                     if (notification.getType().equals(GarbageCollectionNotificationInfo.GARBAGE_COLLECTION_NOTIFICATION)) {
                         //get the information associated with this notification
                         GarbageCollectionNotificationInfo info = GarbageCollectionNotificationInfo.from((CompositeData) notification.getUserData());
-                        System.out.println(">>> GC NAME: " + info.getGcName());
                         //get all the info and pretty print it
                         long duration = info.getGcInfo().getDuration();
                         String gctype = info.getGcAction();

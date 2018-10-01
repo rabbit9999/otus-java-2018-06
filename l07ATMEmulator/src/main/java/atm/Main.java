@@ -28,8 +28,10 @@ public class Main {
         System.out.println("ATM balance: " + atm.getBalance());
 
         int sum = 4850;
-        System.out.println("Getting sum: "+sum);
+        System.out.println("\nGetting sum: "+sum);
         printBundle(atm.get(sum));
+
+        System.out.println("\nATM balance: " + atm.getBalance());
     }
 
     public static void printBundle(List<Banknote> bList){

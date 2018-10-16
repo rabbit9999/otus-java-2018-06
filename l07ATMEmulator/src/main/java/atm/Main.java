@@ -15,21 +15,31 @@ public class Main {
 
         List<Banknote> bundle = new ArrayList<>();
 
-        bundle.addAll(wallet.get(50,12));
-        bundle.addAll(wallet.get(100,10));
-        bundle.addAll(wallet.get(200,8));
-        bundle.addAll(wallet.get(500,6));
-        bundle.addAll(wallet.get(1000,4));
-        bundle.addAll(wallet.get(2000,2));
-        bundle.addAll(wallet.get(5000,1));
-        atm.add(bundle);
+        try {
+            bundle.addAll(wallet.get(50,12));
+            bundle.addAll(wallet.get(100,10));
+            bundle.addAll(wallet.get(200,8));
+            bundle.addAll(wallet.get(500,6));
+            bundle.addAll(wallet.get(1000,4));
+            bundle.addAll(wallet.get(2000,2));
+            bundle.addAll(wallet.get(5000,1));
+            atm.add(bundle);
+        }
+        catch (ATMException e){
+            System.out.println(e.getMessage());
+        }
 
 
         System.out.println("ATM balance: " + atm.getBalance());
 
         int sum = 4850;
         System.out.println("\nGetting sum: "+sum);
-        printBundle(atm.get(sum));
+        try {
+            printBundle(atm.get(sum));
+        }
+        catch (ATMException e){
+            System.out.println(e.getMessage());
+        }
 
         System.out.println("\nATM balance: " + atm.getBalance());
     }

@@ -10,23 +10,23 @@ public class StorageCell {
     private List<Banknote> storage = new ArrayList<>();
     private static final int CELL_LIMIT = 1000;
 
-    public void put(Banknote banknote){
+    public void put(Banknote banknote) throws ATMException{
         if(storage.size() <= CELL_LIMIT){
             storage.add(banknote);
         }
         else{
-            throw new Error("Cell storage is overflow!");
+            throw new ATMException("Cell storage is overflow!");
         }
     }
 
-    public Banknote get(){
+    public Banknote get() throws ATMException{
         if(storage.size() > 0){
             Banknote banknote = storage.get(storage.size() - 1);
             storage.remove(storage.size() - 1);
             return banknote;
         }
         else {
-            throw new Error("Cell storage is empty!");
+            throw new ATMException("Cell storage is empty!");
         }
     }
 

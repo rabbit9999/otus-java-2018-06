@@ -7,14 +7,14 @@ import java.util.TreeMap;
 public class ATMStorage {
     private TreeMap<Integer, StorageCell> storage = new TreeMap<>();
 
-    public void put(Banknote b){
+    public void put(Banknote b) throws ATMException{
         storage.computeIfAbsent(b.getNominal(), k-> new StorageCell()).put(b);
     }
 
-    public Banknote get(int nominal){
+    public Banknote get(int nominal) throws ATMException{
         StorageCell cell = storage.get(nominal);
         if(cell == null){
-            throw new Error("Storage cell not found");
+            throw new ATMException("Storage cell not found");
         }
         return cell.get();
     }

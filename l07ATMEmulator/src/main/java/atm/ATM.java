@@ -8,20 +8,20 @@ public class ATM {
 
     private ATMStorage storage = new ATMStorage();
 
-    public void add(Banknote banknote){
+    public void add(Banknote banknote) throws ATMException{
         storage.put(banknote);
     }
 
-    public void add(List<Banknote> bundle){
+    public void add(List<Banknote> bundle) throws ATMException{
         for(Banknote b:bundle){
             add(b);
         }
     }
 
 
-    public List<Banknote> get(int sum){
+    public List<Banknote> get(int sum) throws ATMException{
         if(sum > getBalance()){
-            throw new Error("Not enough funds");
+            throw new ATMException("Not enough funds");
         }
 
         List<Banknote> bundle = new ArrayList<>();
@@ -31,12 +31,12 @@ public class ATM {
             }
         }
         else{
-            throw new Error("Incorrect sum: it gotta be multiple of " + storage.getMinNominal());
+            throw new ATMException("Incorrect sum: it gotta be multiple of " + storage.getMinNominal());
         }
         return bundle;
     }
 
-    private List<Integer> calculateNominalList(int sum){
+    private List<Integer> calculateNominalList(int sum) throws ATMException{
         List<Integer> nominalList = new ArrayList<>();
         TreeMap<Integer,Integer> reversedAmount = new TreeMap<>(Collections.reverseOrder());
         reversedAmount.putAll(storage.getAmount());
@@ -50,7 +50,7 @@ public class ATM {
             }
         }
         if(sum != 0){
-            throw new Error("Incorrect sum: ATM cannot give out this amount");
+            throw new ATMException("Incorrect sum: ATM cannot give out this amount");
         }
         return nominalList;
     }

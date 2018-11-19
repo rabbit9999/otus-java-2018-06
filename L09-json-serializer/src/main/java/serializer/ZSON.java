@@ -24,7 +24,7 @@ public class ZSON {
 //                System.out.println(val.getClass().getCanonicalName());
 //                System.out.println(res);
                 addValue(key,val,jsonObject);
-                           }
+            }
             catch (Exception e){
                 e.printStackTrace();
             }
@@ -108,63 +108,45 @@ public class ZSON {
 
         else if(List.class.isAssignableFrom(val.getClass())){
             JsonArrayBuilder arrBuilder = Json.createArrayBuilder();
-            try{
-                for(Object v:(List)val){
-                    addValue(v,arrBuilder);
-                }
+            for(Object v:(List)val){
+                addValue(v,arrBuilder);
             }
-            catch (Throwable e){
-                e.printStackTrace();
+
+            if(isObject){
+                objectBuilder.add(key,arrBuilder.build());
             }
-            finally {
-                if(isObject){
-                    objectBuilder.add(key,arrBuilder.build());
-                }
-                else{
-                    arrayBuilder.add(arrBuilder.build());
-                }
+            else{
+                arrayBuilder.add(arrBuilder.build());
             }
         }
 
         else if(val.getClass().isArray()){
             JsonArrayBuilder arrBuilder = Json.createArrayBuilder();
-            try{
-                for(Object v:(Object[]) val){
-                    addValue(v,arrBuilder);
-                }
+            for(Object v:(Object[]) val){
+                addValue(v,arrBuilder);
             }
-            catch (Throwable e){
-                e.printStackTrace();
+
+            if(isObject){
+                objectBuilder.add(key,arrBuilder.build());
             }
-            finally {
-                if(isObject){
-                    objectBuilder.add(key,arrBuilder.build());
-                }
-                else{
-                    arrayBuilder.add(arrBuilder.build());
-                }
+            else{
+                arrayBuilder.add(arrBuilder.build());
             }
         }
 
 
         else if(Map.class.isAssignableFrom(val.getClass())){
             JsonObjectBuilder objBuilder = Json.createObjectBuilder();
-            try{
-                Set<Map.Entry> set = ((Map)val).entrySet();
-                for(Map.Entry<String,Object> e:set){
-                    addValue(e.getKey(),e.getValue(),objBuilder);
-                }
+            Set<Map.Entry> set = ((Map)val).entrySet();
+            for(Map.Entry<String,Object> e:set){
+                addValue(e.getKey(),e.getValue(),objBuilder);
             }
-            catch (Throwable e){
-                e.printStackTrace();
+
+            if(isObject){
+                objectBuilder.add(key,objBuilder.build());
             }
-            finally {
-                if(isObject){
-                    objectBuilder.add(key,objBuilder.build());
-                }
-                else{
-                    arrayBuilder.add(objBuilder.build());
-                }
+            else{
+                arrayBuilder.add(objBuilder.build());
             }
         }
 

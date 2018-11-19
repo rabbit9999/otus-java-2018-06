@@ -6,9 +6,19 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnectionHelper {
+public class Connector {
 
-    static Connection getConnection(String dbName, String userName, String userPassword) {
+    private String dbName = "";
+    private String userName = "";
+    private String userPassword = "";
+
+    Connector(String dbName, String userName, String userPassword){
+        this.dbName = dbName;
+        this.userName = userName;
+        this.userPassword = userPassword;
+    }
+
+    Connection getConnection() {
         try {
             Driver driver = (Driver) Class.forName("com.mysql.cj.jdbc.Driver").getConstructor().newInstance();
             DriverManager.registerDriver(driver);
@@ -19,8 +29,11 @@ public class ConnectionHelper {
                     dbName +"?" +               //db name
                     "user="+userName+"&" +              //login
                     "password="+userPassword+"&" +          //password
-                    "useSSL=false";              //do not use Secure Sockets Layer
-
+                    "useSSL=false&" +              //do not use Secure Sockets Layer
+                    "useUnicode=true&" +
+                    "useJDBCCompliantTimezoneShift=true&" +
+                    "useLegacyDatetimeCode=false&" +
+                    "serverTimezone=UTC";
 
             return DriverManager.getConnection(url);
         } catch (SQLException |

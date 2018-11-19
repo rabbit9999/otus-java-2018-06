@@ -1,4 +1,5 @@
 package myORM;
 
-public class DataSet {
+public abstract class DataSet {
+    public long id;
 }

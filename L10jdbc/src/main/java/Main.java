@@ -1,10 +1,10 @@
 import myORM.DataSet;
-import myORM.MyORM;
+import myORM.MyORMImpl;
 
 public class Main {
     public static void main(String ... args){
 
-        MyORM orm = new MyORM("my_orm_test","my_orm_test","123456");
+        MyORMImpl orm = new MyORMImpl("my_orm_test","my_orm_test","123456");
 
         ORMUser user1 = new ORMUser();
         user1.name = "User 1";
@@ -31,10 +31,10 @@ public class Main {
 
         System.out.println("------");
         for(DataSet el : orm.getDataList(ORMUser.class)){
-            System.out.println(((ORMUser)el).name);
+            System.out.println(el);
         }
         for(DataSet el : orm.getDataList(ORMProduct.class)){
-            System.out.println(((ORMProduct)el).name);
+            System.out.println(el);
         }
 
         orm.delete(ORMUser.class,u1);
@@ -43,12 +43,25 @@ public class Main {
         orm.update(productToChange);
 
 
-        System.out.println("------");
+        System.out.println("------ Getting full data -------");
         for(DataSet el : orm.getDataList(ORMUser.class)){
-            System.out.println(((ORMUser)el).name);
+            System.out.println(el);
         }
         for(DataSet el : orm.getDataList(ORMProduct.class)){
-            System.out.println(((ORMProduct)el).name);
+            System.out.println(el);
         }
+
+        System.out.println("------ Searching by --------");
+        try {
+            for(DataSet el : orm.searchBy(ORMUser.class,ORMUser.class.getField("name"),"User 2")){
+                System.out.println(el);
+            }
+        }
+        catch (NoSuchFieldException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("------ Get count --------");
+        System.out.println(orm.getCount(ORMUser.class));
     }
 }
